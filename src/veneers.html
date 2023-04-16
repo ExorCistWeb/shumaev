@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+{% include "parts/head.html" %}
+
+<body>
+    
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/veneers/1.png');">
+                    <div>
+                        <h2>
+                            Виниры “под ключ”<br> по старой цене<br> <span>13 900 руб.</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description">
+                                <img src="./images/brackets/slider/mark.svg" alt=""> Гарантия лучшей цены
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./images/veneers/2.png');">
+                    <div>
+                        <h2>
+                            Керамические виниры <br> E-Max “под ключ”<br>
+                            <span>17 900 руб.</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description">
+                                <img src="./images/brackets/slider/mark.svg" alt=""> Лучший выбор. Голливудская улыбка по доступной цене!
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./images/veneers/3.png');">
+                    <div>
+                        <h2>
+                            Виниры “под ключ”<br> по старой цене<br> <span>13 900 руб.</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description">
+                                <img src="./images/brackets/slider/mark.svg" alt=""> Ответьте на 5 вопросов и получите точную цену!
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="implant_cont">
+        <div class="wrapper">
+            <div class="implantation">
+                <div>
+                    <h2>Показания к установке виниров</h2>
+                    <p>Врач может назначить установку для решения следующих проблем:</p>
+                </div>
+
+                <div class="grid implantation-grid">
+                    <div class="implantation__item">
+                        <div class="implantation__header">
+                            <img src="./images/implantation/1.svg" alt="">
+                        </div>
+                        <div class="implantation__footer">
+                            Сколы, трещины, пломбы, стираемость зубов
+                        </div>
+                    </div>
+
+                    <div class="implantation__item">
+                        <div class="implantation__header">
+                            <img src="./images/implantation/2.svg" alt="">
+                        </div>
+                        <div class="implantation__footer">
+                            Потемнения эмали, неоднородный цвет, флюороз
+                        </div>
+                    </div>
+
+                    <div class="implantation__item">
+                        <div class="implantation__header">
+                            <img src="./images/implantation/3.svg" alt="">
+                        </div>
+                        <div class="implantation__footer">
+                            Неровный зубной ряд, диастемы
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="exactly">
+            <div class="exactly-header">
+                <h2>Виниры — что это такое?</h2>
+                <p>Виниры — это сверхтонкие накладки на передние зубы из керамики или композитного материала, которые крепятся с помощью специального состава. Благодаря сверхтонкой конструкции, выглядят как собственные зубы.
+                </p>
+
+                <img src="./images/exactly/teeth.svg" alt="">
+            </div>
+
+            <div class="exactly-footer">
+                <h5>Какого результата можно добиться с винирами:</h5>
+
+                <div class="exactly-grid grid">
+                    <div class="exactly__item">
+                        <img src="./images/exactly/3.svg" alt="">
+                        <h5>Эффект anti-age</h5>
+                        <p>Зубы белые, красивые и здоровые, что даёт визуальный эффект омоложения. В итоге вы выглядите минимум на 10 лет моложе.</p>
+                    </div>
+
+                    <div class="exactly__item">
+                        <img src="./images/exactly/2.svg" alt="">
+                        <h5>Естественность</h5>
+                        <p>Качественные и грамотно установленные виниры повторяют анатомическую форму зубов, поэтому незаметны окружающим.</p>
+                    </div>
+
+                    <div class="exactly__item">
+                        <img src="./images/exactly/1.svg" alt="">
+                        <h5>Защита</h5>
+                        <p>Помимо всего прочего, зубы приобретает дополнительную прочность. Накладки защищают от негативных факторов и агрессивных внешних воздействий.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="compare">
+            <h2>Какие преимущества и недостатки есть у виниров?</h2>
+
+            <div class="compare-grid grid">
+                <div class="compare__item">
+                    <div class="compare__head compare__row">
+                        <h3>Композитные виниры</h3>
+                    </div>
+
+                    <div class="compare__row compare__advantage">
+                        Недорогая стоимость
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Быстрое изготовление и установка
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Недостаточная прочность
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Постепенно угасающая эстетика от приёма пищи, напитков и вредных привычек
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Требуется значительная обработка зубов
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        После снятия необходима реставрация зуба
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Срок службы до 5 лет
+                    </div>
+                </div>
+
+                <div class="compare__item compare__item_red">
+                    <img src="./images/compare/optimal.svg" alt="" class="compare__absolute_red">
+
+                    <div class="compare__head compare__row">
+                        <h3>Керамические виниры</h3>
+                    </div>
+
+                    <div class="compare__row compare__advantage">
+                        Уверенная прочность
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Долговечный срок службы вплоть до пожизненного
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Превосходный эстетический результат
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Более длительный процесс изготовления
+                    </div>
+                </div>
+
+                <div class="compare__item">
+                    <div class="compare__head compare__row">
+                        <h3>Люминиры</h3>
+                    </div>
+
+                    <div class="compare__row compare__advantage">
+                        Недорогая стоимость
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Сверхточная имитация зубной эмали
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Требуется минимальная обработка зубов
+                    </div>
+                    <div class="compare__row compare__advantage">
+                        Удаление и замена конструкции происходит без повреждений
+                    </div>
+                    <div class="compare__row compare__disadvantage">
+                        Невозможно замаскировать сильные пигментные изменения оттенка эмали и искривления зубов
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ceramics">
+        <div class="wrapper">
+            <div class="ceramics__column">
+                <h2>
+                    Почему выбирают керамические виниры DrShumaev?
+                </h2>
+
+                <ul>
+                    <li>Срок службы виниров у нас до 20 лет (а не 10)</li>
+                    <li>Без Боли. Используем только качественную анестезию</li>
+                    <li>Установка за 2 посещения. Экономим ваше время</li>
+                </ul>
+
+                <div class="ceramics-red">
+                    <p>От 24 990 руб</p>
+                    13 900 руб
+                </div>
+
+                <button class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                    Получить бесплатный осмотр врача
+                </button>
+            </div>
+
+            <div class="ceramics__column">
+                <img src="./images/ceramics/image.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="consult">
+        <div class="wrapper">
+            <h2 class="text_center">
+                От консультации до установки - <span>2 дня!</span>
+            </h2>
+
+            <div class="consult-grid grid">
+                <div class="consult__item">
+                    <div class="counsult_number">1</div>
+                    <img src="./images/consult/1.png" alt="">
+
+                    <h5>
+                        Консультация <span>(30 минут)</span>
+                    </h5>
+
+                    <ul>
+                        <li>Осмотр</li>
+                        <li>Панорамный снимок</li>
+                        <li>Фотопротокол</li>
+                    </ul>
+                </div>
+
+                <div class="consult__item">
+                    <div class="counsult_number">2</div>
+                    <img src="./images/consult/2.png" alt="">
+
+                    <h5>
+                        Подготовка
+                    </h5>
+
+                    <ul>
+                        <li>Согласование цвета,формы<br> и рельефа зубов</li>
+                        <li>Оплата</li>
+                        <li>Снятие слепков для 3D-моделировки техником</li>
+                    </ul>
+                </div>
+
+                <div class="consult__item">
+                    <div class="counsult_number">3</div>
+                    <img src="./images/consult/3.png" alt="">
+
+                    <h5>
+                        План лечения
+                    </h5>
+
+                    <ul>
+                        <p>В течении суток вам на почту поступит, подготовленный план лечения</p>
+                    </ul>
+                </div>
+
+                <div class="consult__item">
+                    <div class="counsult_number">4</div>
+                    <img src="./images/consult/4.png" alt="">
+
+                    <h5>
+                        Установка виниров
+                    </h5>
+
+                    <ul>
+                        <li>Установка</li>
+                        <li> Шлифовка</li>
+                        <li>Полировкадо зеркального блеска</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="jaws">
+            <div class="jaws__column">
+                <img src="./images/jaws/image.svg" alt="">
+            </div>
+
+            <div class="jaws__column">
+                <h2>
+                    Современный подход по доступной цене!
+                </h2>
+                <h3>3D-Моделировка</h3>
+
+                <p>
+                    Все мои реставрации проходят через снятия слепков и с помощью 3D-моделировки.
+                </p>
+
+                <p>
+                    Вы увидите цифровой дизайн своей будущей улыбки, можете принимать участие в создании своей улыбки, учитываются все пожелания.
+                </p>
+            </div>
+        </div>
+
+        <div class="consultation_form children-form">
+            <h2>Консультация, снимок<br> и план лечения <span>бесплатно</span></h2>
+            <div class="swiper-timer consult_timer">
+                <div class="swiper-timer__item">
+                    <h5>34</h5>
+                    <p>часов</p>
+                </div>
+
+                <div class="swiper-timer__item">
+                    <h5>19</h5>
+                    <p>минут</p>
+                </div>
+
+                <div class="swiper-timer__item">
+                    <h5>05</h5>
+                    <p>секунд</p>
+                </div>
+            </div>
+            <form action="./php/send.php" class="form_cons" method="post">
+                <input type="text" name="title" value="Запись на консультацию + план лечения + снимок; (бесплатно)" style="display: none;">
+                <input ype="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                <button type="submit" class="red_btn submit-btn ">Записаться на прием</button>
+            </form>
+            <span class="agreement">* Нажимая на кнопку, вы выражаете согласие с политикой конфиденциальностии правилами
+                обработки персональных данных</span>
+            <img class="person_svg" src="images/consult/shumaev.png" alt="">
+        </div>
+    </div>
+
+   {% include "parts/repair_one.html" %}
+
+
+    {% include "parts/price_warning.html" %}
+
+
+
+
+    {% include "parts/slider_doctors.html" %}
+
+    {% include "parts/clients.html" %}
+    {% include "parts/slider_rating.html" %}
+    <div class="wrapper">
+        <div class=" veeners-form consultation_form ">
+            <h2>Записаться на бесплатную консультацию</h2>
+            <p>Заполните форму и в ближайшее время с вами свяжется менеджер для уточнения подробностей</p>
+
+            <form action="./php/send.php" class="form_cons" method="post">
+                <input type="text" name="title" value="Запись на консультацию" style="display: none;">
+
+                <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
+            </form>
+            <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+              </label>
+            <img class="person_svg2 person_svg" src="images/consult/form_person.png" alt="">
+        </div>
+    </div>
+
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/faq.html" %}
+
+    <div class="initial_reception_bg">
+        <div class="wrapper ">
+            <div class="initial_reception">
+                <div class="initial_reception_content">
+                    <h2>Запишитесь на<br> первичный прием</h2>
+                    <div class="initial_box">
+                        <div class="unit_box"><img src="images/consult/unit_3.svg" alt=""></div>
+                        <div>
+                            <h5>Точный расчет стоимости</h5>
+                            <p>Итоговая цена фиксируется в договоре и не изменяется. Никакого навязывания дополнительных услуг.</p>
+                        </div>
+                    </div>
+                    <div class="initial_box">
+                        <div class="unit_box"><img src="images/consult/unit_2.svg" alt=""></div>
+                        <div>
+                            <h5>Оптимальный вариант лечения</h5>
+                            <p>Врач составляет план лечения, который оптимально подходит именно для вашего случая.</p>
+                        </div>
+                    </div>
+                    <div class="initial_box">
+                        <div class="unit_box">
+                            <img src="images/consult/unit_1.svg" alt="">
+                        </div>
+                        <div>
+                            <h5>Знакомство с клиникой и врачем</h5>
+                            <p>Вы познакомитесь с врачом и клиникой и получите ответы на все интересующие вопросы.</p>
+                        </div>
+                    </div>
+                    <button class="doctors__button_fill init_btn" onclick="openModal('form-modal-callback')"> Записаться на прием </button>
+                </div>
+                <img class="img_priem" src="images/consult/init_img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

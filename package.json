@@ -1,0 +1,17 @@
+{
+    "name": "Dr.Shumaev",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "gulp": "gulp",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-nunjucks": "^5.1.0",
+        "swiper": "^9.1.1"
+    }
+}
