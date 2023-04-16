@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang='ru'>
+    {% include "parts/head.html" %}
+    <body>
+        <div class="pre-nav">
+            <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+            </h3>
+        </div>
+        <div class="wrapper">
+            {% include "parts/header.html" %}
+            <div class="swiper swiper-header swiper-usual">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('./images/prosthetics/cad_cam_modeling.png');">
+                        <div> 
+                            <h2>
+                              CAD/CAM<br> моделирование
+                            </h2> 
+                            <div class="swiper-body">
+                                <p class="swiper-body-description sw_body_turnkey" >
+                                    <img src="./images/brackets/slider/mark.svg" alt="" >Идеальная анатомическая точность по сравнению<br> с традиционными методами
+                                </p>
+                                 
+                                <div class="swiper-timer-container">
+                                    <div class="swiper-timer">
+                                        <div class="swiper-timer__item">
+                                            <h5>34</h5>
+                                            <p>часов</p>
+                                        </div>
+
+                                        <div class="swiper-timer__item">
+                                            <h5>19</h5>
+                                            <p>минут</p>
+                                        </div>
+
+                                        <div class="swiper-timer__item">
+                                            <h5>05</h5>
+                                            <p>секунд</p>
+                                        </div>
+                                    </div>
+
+                                    <p class="swiper-timer-desc">
+                                        Ответьте на 5 вопросов и получите точную цену!
+                                    </p>
+                                </div>
+
+                                <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./images/products/arrow-slider-products-left.svg" alt="">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./images/products/arrow-slider-products-right.svg" alt="">
+                </div>
+            </div>
+            <div class="experience">
+                 <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/experience/hand.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <p><span>Без скрытых комиссий.</span>
+                            <br>Все включено.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/experience/like.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <p><span>Брекеты не окрашиваются</span>
+                            <br>и не влияют на вкус!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/experience/group.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <p><span>3645 пациентов</span>
+                            <br>уже доверились нам
+                        </p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/experience/trophy.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <p><span>Врачи с опытос</span>
+                            <br>15+ лет
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {# Добавить блок ДОБАВИТЬ #}
+        <div class="wrapper ">
+            <div class="exactly  exactly_flex">
+                <div class="exactly-header " style="padding: 0;">
+                    <h2>CAD/CAM моделирование </h2>
+                    <p style="max-width: 645px">
+                        Современное моделирование зубных протезов сложно представить без применения высокоточных компьютерных программ. Одной из лучших методик протезирования зубов является научно-практическая разработка CAD/CAM.<br><br>
+
+CAD/CAM-технология позволяет получать каркасы зубных протезов высочайшей точности, прекрасной биосовместимости и безупречной эстетики за короткие сроки.<br><br>
+
+Применяется CAD/CAM моделирование, в основном, для создания коронок из оксида циркония. Этот материал считается одним из самых эстетичных, поэтому требует особого высокоточного подхода. Главное достоинство протезов из оксида циркония – их незаметность.<br><br>
+
+Отсутствие металлической основы делает такие протезы абсолютно неотличимыми от естественных зубов, благодаря чему ими можно заменять даже передние зубы.
+                    </p>
+                </div>
+                <img src="./images/prosthetics/ex16.png" alt=" ">
+            </div>
+        </div>
+
+        {# Изменить иконки/отступы #}
+        <div class="cases " style="margin-bottom: 100px;">
+            <div class="wrapper ">
+                <h2>Преимущества нейлоновых протезов</h2>
+                <div class="cases_flex_cont all-on-6_cases">
+                    <div class="cases_flex_side ">
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                            </div>
+                            <p style="max-width: 300px;">Значительно уменьшен человеческий фактор</p>
+                        </div>
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                            </div>
+                            <p >Устойчивость к развитию бактерий на поверхности материала</p>
+                        </div>
+                    
+                    </div>
+                    <div class="cases_flex_side ">
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                            </div>
+                            <p>Идеальное анатомическое соответствие протеза</p>
+                        </div>
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                            </div>
+                            <p style="max-width: 320px;">Прочность и долговечность</p>
+                        </div>
+        
+                    </div>
+                    <div class="cases_flex_side ">
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                            </div>
+                            <p style="max-width: 240px;">Значительно сокращается время протезирования</p>
+                        </div>
+
+                        
+                    
+                        <div class="cases_flex_box ">
+                            <div class="cases_flex_img ">
+                                <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                            </div>
+                            <p style="max-width: 300px;">Отсутствие чувствительности к изменению температуры</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        {% include "parts/form_ortodont.html" %}
+      
+        {% include "parts/top_five.html" %}
+        {% include "parts/care.html" %}
+        {% include "parts/review.html" %}
+        {% include "parts/clients.html" %} 
+        {% include "parts/create.html" %}
+        {% include "parts/price_warning.html" %}
+        {% include "parts/slider_rating.html" %}
+        {% include "parts/slider_doctors.html" %}
+        {% include "parts/deduction.html" %}
+        {# Добавить блок ДОБАВИТЬ #}
+        {% include "parts/price_crown_tabl.html" %}
+        {% include "parts/slider_clinic.html" %} 
+        {% include "parts/popup.html" %} 
+        {% include "parts/footer.html" %}
+    </body>
+
+    </html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+{% include "parts/head.html" %}
+
+<body>
+
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+
+        <div class="swiper swiper-header swiper-usual swiper-children">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/chidren/slider/1.png');">
+                    <div>
+                        <h2>
+                            Лечим деток <span>качественно и без стресса</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <ul>
+                                <li>Без Боли</li>
+                                <li>На современном оборудовании</li>
+                                <li>С гарантией результата</li>
+                            </ul>
+
+                            <div class="swiper-timer">
+                                <div class="swiper-timer__item">
+                                    <h5>34</h5>
+                                    <p>часов</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>19</h5>
+                                    <p>минут</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>05</h5>
+                                    <p>секунд</p>
+                                </div>
+                            </div>
+
+                            <button class="swiper-button discount_btn" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получить скидку
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./images/chidren/slider/2.png');">
+                    <div>
+                        <h2>
+                            Когда сравнивают - <span>выбирают нас!</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <ul>
+                                <li>Лучшие специалисты</li>
+                                <li>Европейский подход к лечению</li>
+                                <li>Доступные цены</li>
+                            </ul>
+
+                            <div class="swiper-timer">
+                                <div class="swiper-timer__item">
+                                    <h5>34</h5>
+                                    <p>часов</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>19</h5>
+                                    <p>минут</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>05</h5>
+                                    <p>секунд</p>
+                                </div>
+                            </div>
+
+                            <button class="swiper-button discount_btn" onclick="openModal('form-modal-scidka')">
+                                <a href="" >
+                                    Получить скидку
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" style="background-image: url('./images/chidren/slider/3.png');">
+                    <div>
+                        <h2>
+                            Лечим зубы детям <span><br>по старой цене</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <ul>
+                                <li>Цены от 350 рублей</li>
+                                <li>Качественная анастезия</li>
+                                <li>Европейское оборудование</li>
+                            </ul>
+
+                            <div class="swiper-timer">
+                                <div class="swiper-timer__item">
+                                    <h5>34</h5>
+                                    <p>часов</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>19</h5>
+                                    <p>минут</p>
+                                </div>
+
+                                <div class="swiper-timer__item">
+                                    <h5>05</h5>
+                                    <p>секунд</p>
+                                </div>
+                            </div>
+
+                            <button class="swiper-button discount_btn" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получить скидку
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+
+        <div class="experience experience-lots">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/game.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Удобная зона</span>
+                        <br>отдыха
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/procentage.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Беспроцентная</span>
+                        <br>рассрочка
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cases">
+        <div class="wrapper">
+            <h2>
+                Поможем во всех случаях,
+                <br>даже самых сложных
+            </h2>
+
+            <div class="grid cases-grid">
+                <div class="case" style="grid-area: a;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/1.svg" alt="">
+                        <h5>Консультация и диагностика</h5>
+                        <p>когда вы только пришли к нам</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: b;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/2.svg" alt="">
+                        <h5>Исправление прикуса</h5>
+                        <p>когда молочные зубы неровные</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: c;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/3.svg" alt="">
+                        <h5>Лечение дёсен</h5>
+                        <p>когда десна кровоточит или стоматит</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: d;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/4.svg" alt="">
+                        <h5>Протезирование</h5>
+                        <p>
+                            Когда зуб разрушен</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: e;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/5.svg" alt="">
+                        <h5>Лечение зубов детям</h5>
+                        <p>когда зуб только заболел или с ним что-то не так</p>
+                    </div>
+
+                    <ul class="case__footer">
+                        <li>Лечение кариеса</li>
+                        <li>Лечение пульпита</li>
+                        <li>Лечение стоматита</li>
+                        <li>Лечение периодонтита</li>
+                    </ul>
+                </div>
+                <div class="case" style="grid-area: f;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/6.svg" alt="">
+                        <h5>Пластика уздечки</h5>
+                        <p>когда проблемы с кормлением или дефект речи</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: g;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/8.svg" alt="">
+                        <h5>Профилактика</h5>
+                        <p>чтобы зубки не болели</p>
+                    </div>
+
+                    <ul class="case__footer">
+                        <li>Лечение кариеса</li>
+                        <li>Лечение пульпита</li>
+                        <li>Лечение стоматита</li>
+                        <li>Лечение периодонтита</li>
+                    </ul>
+                </div>
+                <div class="case" style="grid-area: h;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/9.svg" alt="">
+                        <h5>Лечение травм зубов</h5>
+                        <p>
+                            когда ребенок упал</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: i;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/7.svg" alt="">
+                        <h5>Хирургия</h5>
+                        <p>когда зуб разрушен или болит</p>
+                    </div>
+                </div>
+                <div class="case" style="grid-area: j;">
+                    <div class="case__head">
+                        <img src="./images/cases/icons/10.svg" alt="">
+                        <h5>Лечение зубов подросткам
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "parts/top_five_children.html" %}
+    <div class="wrapper">
+        <div class="consultation_form children-form">
+            <h2>Записаться на бесплатную консультацию</h2>
+            <p>Заполните форму и в ближайшее время с вами свяжется менеджер для уточнения подробностей</p>
+
+            <form action="./php/send.php" class="form_cons" method="post">
+                <input type="text" value="Запись на прием" name="title" style="display: none;">
+                <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
+            </form>
+           <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+              </label>
+            <img class="person_svg" src="images/products/consultation/woman.svg" alt="">
+        </div>
+
+    </div>
+
+    {% include "parts/care.html" %}
+
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    <div class="wrapper">
+
+
+        <div class="consultation_form payment-form">
+            <div>
+                <h2>Рассрочка без переплат</h2>
+                <p>Или кредит на особых условиях</p>
+                <h3>от 3000 руб/месяц</h3>
+
+                <button type="submit" class="red_btn" onclick="openModal('form-modal-instal')"> Узнать подробее</button>
+
+            </div>
+            <img class="person_svg2 person_svg" src="images/products/consultation/zero-procentage.svg" alt="">
+        </div>
+    </div>
+
+    {% include "parts/slider_rating.html" %}
+
+    {% include "parts/slider_doctors.html" %}
+
+    {% include "parts/slider_clinic.html" %}
+
+
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>
