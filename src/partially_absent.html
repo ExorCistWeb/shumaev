@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<!-- {% include "parts/head.html" %} -->
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/prosthetics/brin_bg.png');">
+                    <div>
+                        <h2>
+                            При частичном<br> отсутствии зубов
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Полностью восстанавливает
+                                жевательную эффективность
+                            </p>
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Невысокая цена протезирования
+                            </p>
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Изменить иконки/отступы #}
+    <div class="cases " style="margin-bottom: 100px;">
+        <div class="wrapper ">
+            <h2>Какие проблемы решает протезирование</h2>
+            <div class="cases_flex_cont all-on-6_cases">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Лучшая эстетика</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 240px;">Минимум противопоказаний</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Простота изготовления</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 320px;">Отсутствие фиксаторов</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 240px;">Возможность использования независимо от возраста</p>
+                    </div>
+
+
+
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Невысокая цена</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0; max-width: 645px;">
+                <h2>Протезирование при частичном отсутствии зубов</h2>
+                <p style="max-width: 645px">
+                    Протезирование при частичном отсутствии зубов – это стоматологический метод, который позволяет
+                    восстановить функции челюстного аппарата, вернуть эстетическую привлекательность, а с ней и
+                    психологический комфорт.<br><br>
+
+                    Метод частичного протезирования подразумевает, что какие-то зубы у пациента имеются, то есть зубы
+                    отсутствуют частично (отсюда и название). Отсутствие даже одного зуба либо присутствие хотя бы
+                    одного зуба при отсутствии остальных (то есть имеется только один зуб) уже считается частичным
+                    отсутствием зубов.<br><br>
+
+                    Частичное протезирование производится с использованием либо имплантатов, либо стальных конструкций с
+                    опорой на зубы, либо с помощью съемных протезов.
+                </p>
+            </div>
+            <img src="./images/prosthetics/ex11.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0; max-width: 675px;">
+                <h2>Для протезирования при частичном отсутствии зубов используются:</h2>
+                <p>
+                    <span>мостовидные конструкции,</span>
+                    <span>съемные конструкции (съемные виды протезов),</span>
+                    <span>коронки с опорой на имплантат,</span>
+                    <span>мостовидные конструкции с опорой на имплантат.</span><br>
+
+
+
+
+                    Восстановить один отсутствующий зуб сегодня – довольно простая задача. Это можно сделать различными
+                    способами: установкой коронки с опорой на имплантате, а также с помощью виниров. Восстановление
+                    нескольких отсутствующих зубов – уже более сложный и длительный процесс, несмотря на то, что
+                    существует большое разнообразие протезов.
+
+                </p>
+            </div>
+            <img src="./images/prosthetics/ex12.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {# Добавить блок ДОБАВИТЬ #}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+{% block aside %}
+<div id="form-modal-callback" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2>Запишитесь на приём</h2>
+        <p>Заполните простую форму, и наш <span>специалистсвяжется  с Вами в ближайшее время.</span></p>
+        <form action="./php/send.php" id="form1" class="form telegram__form">
+            <input type="text" value="Записаться на прием" name="title" style="display: none;">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="tel" id="phone" name="phone" class="phone_mask" placeholder="Номер телефона" required>
+            <input type="submit" value="Отправить" class="form__btn submit-btn">
+            <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+              </label>
+        </form>
+    </div>
+</div>
+
+<div id="form-modal-scidka" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2>Получить скидку</h2>
+        <p>Заполните простую форму, и наш <span>специалистсвяжется  с Вами в ближайшее время.</span></p>
+        <form action="./php/send.php" id="form1" class="form telegram__form">
+            <input type="text" value="Получить скидку" name="title" style="display: none;">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="tel" id="phone" name="phone" class="phone_mask" placeholder="Номер телефона" required>
+            <input type="submit" value="Отправить" class="form__btn submit-btn">
+            <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+              </label>
+        </form>
+    </div>
+</div>
+
+<div id="form-modal-instal" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <h2>Рассрочка без переплат</h2>
+        <p>Заполните поля ниже, и наш специалист свяжется с Вами и расскажет подробнее про рассрочку на имплантацию зубов.</p>
+        <form id="form1" class="form telegram__form" method="post" action="./php/send.php">
+            <input type="text" value="Рассрочка без переплат" style="display: none;">
+
+            <input type="text" value="Записаться на прием" name="title" style="display: none;">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="tel" id="phone" name="phone" class="phone_mask" placeholder="Номер телефона" required>
+            <input type="submit" value="Отправить" class="form__btn submit-btn">
+            <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+              </label>
+        </form>
+    </div>
+</div>
+
+<!-- WARNING POPUP -->
+<div id="form-modal-econom" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="preloader"></div>
+        <h2>Плохая стерилизация (экономят)</h2>
+        <p>Не стерилизуют перед каждым пациентом – наконечники, ультрозвуковые насадки, ключи для насадок. Почему? Достаточно дорогое оборудование, как правило у врача их всего по одной шутки. А должны быть несколько, после приёма пациента снять и отдать
+            на стерилизацию, надеть простерилизованные. Осторожно, почти никто так не делает.</p>
+    </div>
+</div>
+<div id="form-modal-optic" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="preloader"></div>
+        <h2>Работают без увеличения</h2>
+        <p>Не используют бинокулярные очки или микроскоп. С помощью микроскопа - зубы увеличиваются в 30 раз, это позволяет установить винир с хирургической точностью, убрать лишний материал. Без увеличения, просто глазом – это не увидеть.</p>
+    </div>
+</div>
+<div id="form-modal-sys" class="modal form-modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="preloader"></div>
+        <h2>Нет изоляционной системы Раббердам, последствия:</h2>
+        <ul>
+            <li>В реставрацию попадает слюна, кровь и десневая жидкость в которой содержатся бактерии это может привести к дебондингу (отслойка винира), скол винира либо кариес под виниром.</li><br>
+            <li>Без изоляционной системы влага в выдыхаемом воздухе попадает на поверхность зуба что так же негативно влияет на силу прикрепления винира к зубу.</li><br>
+            <li>Безопасность для пациента, с изоляционной системой Раббердам не попадет пациенту в рот такие как ортофосфорная кислота, этиловый спирт, костная пыль. инфицированная кариозная стружка не попадает в дыхательные пути.</li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<!-- {% include "parts/head.html" %} -->
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/prosthetics/complete_ab_bg.png');">
+                    <div>
+                        <h2>
+                            При полном<br> отсутствии зубов
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Высокие эстетические свойства
+                            </p>
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Максимальный комфорт для пациента
+                            </p>
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Изменить иконки/отступы #}
+    <div class="cases " style="margin-bottom: 100px;">
+        <div class="wrapper ">
+            <h2>Какие проблемы решает протезирование</h2>
+            <div class="cases_flex_cont all-on-6_cases">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Высокая эстетичность протеза при отсутствии всех зубов</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Необязательно проведение костной пластики</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Несъемная конструкция не смещается, не выпадает</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 320px;">Атрофия костной ткани приостанавливается</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 240px;">Короткие сроки лечения (1-7 дней на все работы)</p>
+                    </div>
+
+
+
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Возможность корректировки протеза без затрагивания имплантов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Протезирование при полном отсутствии зубов</h2>
+                <p style="max-width: 685px">
+                    При полном отсутствии зубов (адентии) показан такой метод, как полное протезирование, которое
+                    позволяет восстановить потерянные зубы. Для этого применяются современные материалы и методы,
+                    обеспечивающие качественную фиксацию протеза в ротовой полости и позволяющие вернуть зубам все
+                    функции.<br><br>
+                    В современной стоматологии существует два метода полного протезирования зубов:
+                    <span>съемное протезирование;</span>
+                    <span>несъемное протезирование.</span><br>
+                    К съемному относятся акриловые и нейлоновые протезы, условно-съемные конструкции, съемные протезы с
+                    опорой на балочную конструкцию или с опорой на имплантаты. К несъемному- металлокерамические протезы
+                    с опорой на имплантаты или протезы на основе диоксида циркония.
+                </p>
+            </div>
+            <img src="./images/prosthetics/ex10.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    {# Добавить блок ДОБАВИТЬ #}
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {# Добавить блок ДОБАВИТЬ #}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>
