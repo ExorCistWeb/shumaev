@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<!-- {% include "parts/head.html" %} -->
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/prosthetics/rem_dent_bg.png');">
+                    <div>
+                        <h2>
+                            Съемное протезирование<br> зубов
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Обладают очень высокими
+                                эстетическими качествами<br> (фактически незаметны), удобны и долговечны.
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Что такое съемные зубные<br> протезы?</h2>
+                <p style="max-width: 645px">
+                    Cъёмные зубные протезы — это ортопедические конструкции для тех случаев, когда отсутствуют несколько
+                    зубов. Или когда зубов нет совсем — на одной или на обеих челюстях. Такой протез пациент может
+                    установить и снять самостоятельно.Если по каким-то причинам вам невозможно установить имплантаты,
+                    стоматолог-ортопед может порекомендовать съёмные зубные протезы.Современные съемные протезы
+                    практически незаметны, легки, не доставляют неприятных ощущений в ношении. При правильном уходе и
+                    хорошей гигиене они очень долго не изменяют свой внешний вид и могут служить годами.
+                </p>
+            </div>
+            <img src="./images/prosthetics/ex5.png" alt=" ">
+        </div>
+    </div>
+    {# Изменить иконки/отступы #}
+    <div class="cases " style="margin-bottom: 100px;">
+        <div class="wrapper ">
+            <h2>Преимущества съемного протезирования зубов</h2>
+            <div class="cases_flex_cont all-on-6_cases">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p>Доступная цена</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p>Комфортны в<br> использовании</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Нет возрастных<br> ограничений</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p>Неприхотливы в уходе</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 270px;">Большой выбор конструкций и материалов</p>
+                    </div>
+
+
+
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 270px;">Быстрый срок изготовления конструкций</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    {% include "parts/form_ortodont.html" %}
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+{% block aside %}
+    <div class="wrapper">
+
+        <div class="consultation_form tax-form">
+            <h2>Сделаем налоговый вычет</h2>
+            <p style="color: #E31E24">Вернем 13% от стоимости лечения</p>
+
+            <form action="./php/send.php" id="form1" class="form_cons">
+                <input type="text" value="Сделать налоговый вычет" name="title" style="display: none;" required>
+                <input type="text" placeholder="ФИО налогоплатильщика" name="name" required>
+                <input type="text" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                <input type="text" placeholder="Тип справки (для себя/ребенка/родителей)" name="type" required>
+                <button type="submit" class="red_btn">Отправить данные</button>
+                
+            </form>
+          <label>
+                    <input type="checkbox" name="consent" checked>
+                    Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+                  </label>
+        </div>
+    </div>
+{% endblock %}
