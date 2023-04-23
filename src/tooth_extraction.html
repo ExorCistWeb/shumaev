@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/surgery/tooth_extraction.png');">
+                    <div>
+                        <h2>
+                            Удаление<br> зубов
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Оптимальный подбор анестезии
+                            </p>
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Полное отсутствие стресса
+                            </p>
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Новые методы удаления</h2>
+                <p style="max-width: 675px">
+                    В современной медицине у врача появилась уникальная возможность удалять зубы с наименьшей
+                    травматизацией костной ткни. Если раньше основным инструментом для удаления зуба были щипцы и
+                    элеваторы, то при атравматичном удалении им осталась малая роль. Сегодня в первую очередь наши
+                    помощники люксаторы и боры для фрагментации зуба или корней. <br><br>
+
+                    При удалении распиливается только зуб, что помогает оказать минимальное давление инструмента на
+                    кость, а щипцы используются только для ротации корней.
+                </p>
+            </div>
+            <img src="./images/surgery/ex1.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    {# Добавить новый2 блок #}
+
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="price_implant price_crown">
+            <h2>Стоимость удаления зуба</h2>
+            <p class="price_title_p ">Итоговая цена! Никаких скрытых платежей! В стоимость входит:</p>
+
+            <div class="price_table price_table_turnkey">
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">Удаление зуба простое</h3>
+                    <h3><span>2 500 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">Удаление зуба сложное</h3>
+                    <h3><span>3 500 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">Удаление зуба с разъединением корней</h3>
+                    <h3><span>4 500 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+
+            </div>
+
+
+            <div class="price_table price_table_mobile ">
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">Удаление зуба простое</h3>
+                        <h3><span>2 500 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">Удаление зуба сложное</h3>
+                        <h3><span>3 500 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">Удаление зуба с разъединением корней</h3>
+                        <h3><span>4 500 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

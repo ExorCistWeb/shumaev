@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+{% include 'parts/head.html' %}
+
+<body>
+
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        {% include 'parts/header.html' %}
+
+        <section id="head">
+            <div class="products">
+                <div class="swiper swiper-usual">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" style="background-image: url('./images/products/slider-backgrounds/1.png');">
+                            <div class="index_title">
+                                <h2>Зубы за 1 день</h2>
+                                <p>Красивая улыбка без морщин за один день. Можно забыть о неудобных съемных протезах.</p>
+                                <a href="#" onclick="openModal('form-modal-callback')">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination products-pagination"></div>
+
+                    <div class="swiper-button-prev">
+                        <img src="./images/products/arrow-slider-products-left.svg" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./images/products/arrow-slider-products-right.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="products-grid grid">
+                    <a href="./all-on-4.html" class="product product_1">
+                        <h3>Протезирование</h3>
+                        <img src="images/products/grid-images/1.svg" alt="">
+                    </a>
+                    <a href="./implants.html" class="product product_2">
+                        <h3>Имплантация зубов
+                        </h3>
+                        <img src="images/products/grid-images/2.svg" alt="">
+                    </a>
+                    <a href="./children.html" class="product product_3">
+                        <h3>Детская стомматология
+                        </h3>
+                        <img src="images/products/grid-images/3.svg" alt="">
+                    </a>
+                    <a href="./brackets.html" class="product product_4">
+                        <h3 style="text-align: start;">Ортодонтия</h3>
+                        <img src="images/products/grid-images/4.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="experience">
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/index/fa_1.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <h3>15</h3>
+                        <p>лет опыта</p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/index/fa_2.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <h3>15 000</h3>
+                        <p>пациентов ежегодно</p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/index/fa_3.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <h3>50 000</h3>
+                        <p>установленных имплантов </p>
+                    </div>
+                </div>
+
+                <div class="experience__item">
+                    <div class="experience__column">
+                        <img src="./images/experience/trophy.png" alt="">
+                    </div>
+                    <div class="experience__column">
+                        <h3>10</h3>
+                        <p>врачей</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    {% include "parts/slider_patients.html" %}
+    <div class="wrapper">
+
+        <section id="facts">
+            <div class="facts">
+                <h3>Топ 6 фактов о нас</h3>
+
+                <div class="facts-grid grid">
+                    <div class="fact">
+                        <img src="./images/index/top_fa_1.png" alt="">
+                        <h4>Доступные цены</h4>
+                    </div>
+                    <div class="fact">
+                        <img src="./images/index/top_fa_2.png" alt="">
+                        <h4>Квалифицированные<br> врачи
+                        </h4>
+                    </div>
+                    <div class="fact">
+                        <img src="./images/index/top_fa_3.png" alt="">
+                        <h4>Современное<br> оборудование</h4>
+                    </div>
+                    <div class="fact">
+                        <img src="./images/index/top_fa_4.png" alt="">
+                        <h4>Лечим без боли</h4>
+                    </div>
+                    <div class="fact">
+                        <img src="./images/index/top_fa_5.png" alt="">
+                        <h4>Гарантия качества</h4>
+                    </div>
+                    <div class="fact">
+                        <img src="./images/index/top_fa_6.png" alt="">
+                        <h4>Полный спектр стоматологических услуг</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consultation_form">
+            <div class="consultation_form veeners-form">
+                <h2>Получите бесплатную <br>онлайн консультацию </h2>
+                <p>Текст подзаголовка выглядит примерно так</p>
+                <form action="./php/send.php" id="form5" class="form_cons" method="post">
+                    <input type="text" value="Беслаптная консультация" style="display: none;" name="title">
+                    <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                    <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
+                </form>
+                <label>
+                    <input type="checkbox" name="consent" checked>
+                    Нажимая "Отправить", я даю своё согласие на обработку моих <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+                  </label>
+                <img class="person_svg2 person_svg" src="images/products/consultation/person.svg" alt="">
+            </div>
+        </section>
+    </div>
+    {% include "parts/slider_doctors.html" %}
+
+    <section id="all_services">
+        <div class="all_services">
+            <div class="wrapper">
+                <h2>
+                    Все услуги стоматологии<br>
+                    <span>в одном месте 7 дней в неделю без перерывов</span>
+                </h2>
+                <div class="all_services_content">
+                    <div class="all_services_box">
+                        <div class="all_serv_img">
+                            <img src="./images/index/all_fa_1.png" alt="">
+                        </div>
+                        <h3>Восстановить зуб</h3>
+                        <a href="./404.html">Коронка на зуб</a>
+                        <a href="./implants.html">Иплантанты зубов</a>
+                        <a href="./404.html">Протезирование зубов</a>
+                        <a href="./404.html">Реставрация зубов</a>
+                        <a href="./services.html">Ещё...</a>
+                    </div>
+                    <div class="all_services_box">
+                        <div class="all_serv_img">
+                            <img src="./images/index/all_fa_2.png" alt="">
+                        </div>
+                        <h3>Вставить все зубы</h3>
+                        <a href="./all-on-4.html">Все зубы за 1 день All on 4</a>
+                        <a href="./all-on-4.html">Имплантация All on 6</a>
+                        <a href="./404.html">Несъемные протезы</a>
+                        <a href="./404.html">Съемные протезы</a>
+                        <a href="./services.html">Ещё...</a>
+                    </div>
+                    <div class="all_services_box">
+                        <div class="all_serv_img">
+                            <img src="./images/index/all_fa_3.png" alt="">
+                        </div>
+                        <h3>Вылечить зубы</h3>
+                        <a href="./404.html">Лечение зубов</a>
+                        <a href="./404.html">Удаление зуба</a>
+                        <a href="./404.html">Лечение десен</a>
+                        <a href="./404.html">Чистота зубов</a>
+                        <a href="./services.html">Ещё...</a>
+                    </div>
+                    <div class="all_services_box">
+                        <div class="all_serv_img">
+                            <img src="./images/index/all_fa_4.png" alt="">
+                        </div>
+                        <h3>Красивая улыбка</h3>
+                        <a href="./veneers.html">Виниры на зубы</a>
+                        <a href="./brackets.html">Брекеты</a>
+                        <a href="./404.html">Отбеливание зубов</a>
+                        <a href="./404.html">Чистка Air Flow</a>
+                        <a href="./services.html">Ещё...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map_block">
+        <div class="wrapper">
+            <h2>География <br>наших<br> клиентов</h2>
+            <p>Нам доверились более 80 000 человек. Откуда к нам приезжают на лечение?</p>
+        </div>
+    </div>
+    <div class="helping">
+        <div class="wrapper">
+            <h2>Помогаем восстановить зубы<br>
+                <span>иногородним пациентам</span>
+            </h2>
+            <div class="helping_content">
+                <img class="ino_img" src="./images/index/ino_img.png" alt="">
+                <div class="help_block">
+                    <div class="helping_box">
+                        <div class="help_flex">
+                            <div class="help_img">
+                                <img src="./images/index/help_fa_1.png" alt="">
+                            </div>
+                            <h4>Online-дистанционно<br> консультация врача</h4>
+                        </div>
+                        <div class="helping_num">1</div>
+                    </div>
+                    <div class="helping_box">
+                        <div class="help_flex">
+                            <div class="help_img">
+                                <img src="./images/index/help_fa_2.png" alt="">
+                            </div>
+                            <h4>Организуем приезд <br>и размещение</h4>
+                        </div>
+                        <div class="helping_num">2</div>
+                    </div>
+                    <div class="helping_box">
+                        <div class="help_flex">
+                            <div class="help_img">
+                                <img src="./images/index/help_fa_3.png" alt="">
+                            </div>
+                            <h4>Восстановление зубов<br> за 1-3 дня</h4>
+                        </div>
+                        <div class="helping_num">3</div>
+                    </div>
+                    <div class="helping_box">
+                        <div class="help_flex">
+                            <div class="help_img">
+                                <img src="./images/index/help_fa_4.png" alt="">
+                            </div>
+                            <h4>Поддержка и уход во <br>время и после лечения</h4>
+                        </div>
+                        <div class="helping_num">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="transfer">
+        <div class="wrapper">
+            <h2><img class="border_text" src="./images/index/border_text.svg" alt=""><span> Бесплатный трансфер<br> на операцию в клинику <br>и обратно</span></h2>
+        </div>
+    </div>
+    {% include "parts/clients.html" %} 
+    {% include "parts/review.html" %} 
+    {% include "parts/repair_one.html" %}
+    {% include "parts/care_three.html" %}
+    {% include "parts/slider_clinic.html" %} 
+    {% include "parts/popup.html" %} 
+    {% include "parts/footer.html" %}
+
+
+
+
+
+</body>
+
+</html>

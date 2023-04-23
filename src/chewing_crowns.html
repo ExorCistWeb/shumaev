@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/prosthetics/chewing_crowns_bg.png');">
+                    <div>
+                        <h2>
+                            Коронки на<br> жевательные зубы
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Период службы достигает 10 лет и
+                                более
+                            </p>
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Коронки способны выдерживать
+                                большую<br> жевательную нагрузку
+                            </p>
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Коронка на жевательный зуб</h2>
+                <p style="max-width: 675px">
+                    Коронка на жевательный зуб – стоматологический протез, служит для восстановления разрушенного зуба.
+                    Внешне ортопедическая конструкция напоминает маленький колпачок, а поверхность коронки жевательного
+                    зуба абсолютно точно повторяет анатомическую форму реставрируемой единицы.<br><br>
+
+                    Зубы, расположенные в задней зоне челюсти, выполняют важную функцию в жизнеобеспечение человека –
+                    тщательное пережевывание пищи. Разрушение или удаление жевательной единицы незамедлительно
+                    сказывается на функциональности зубочелюстного аппарата, что в свою очередь отражается на
+                    стабильности работы желудка и кишечника. Своевременная установка коронки на жевательные зубы не
+                    менее важна, чем эстетическая реставрация зубного ряда в зоне улыбки.
+                </p>
+            </div>
+            <img src="./images/prosthetics/ex14.png" alt=" ">
+        </div>
+    </div>
+    {# Добавить новый блок #}
+    {% include "parts/form_ortodont.html" %}
+
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {# Добавить блок ДОБАВИТЬ #}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

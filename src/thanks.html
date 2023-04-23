@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+{% include "parts/head.html" %}
+
+<body>
+
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+
+    </div>
+    <div class="wrapper">
+        <div class="thank_page">
+            <div class="error_title">
+                <h1>Спасибо за <br> Вашу заявку!</h1>
+                <p>Наш менеджер свяжется с Вами в ближайшее время</p>
+                <a class="red_btn" href="./index.html">Вернуться на Главную</a>
+            </div>
+            <img src="./images/thanks/bg_img.svg" alt="">
+        </div>
+    </div>
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+{% include "parts/head.html" %} -->
+
+<body>
+
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+
+
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/all-on-4/slider_1.png');">
+                    <div>
+                        <h2>
+                            Имплантация всех зубов с несъемным протезом All-On 4/6 <span>за 1 день!</span>
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="all_one_4_p">от <span>220 000 руб</span> на 4-х имплантах <s> 330 000 Руб</s></p>
+                            <p class="all_one_4_p">от <span>320 000 руб</span> на 6-ти имплантатах <s> 430 000 Руб</s>
+                            </p>
+
+                            <div class="timer_cont">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+                                <p class="timer_p">Ответьте на 5 вопросов и получите точную цену!</p>
+                            </div>
+
+                            <button class="swiper-button discount_btn" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получить скидку
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/teeth.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без болей с качественной</span><br> анестезией
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+            <div class="experience__item ">
+                <div class="experience__column ">
+                    <img src="./images/experience/trophy.png " alt=" ">
+                </div>
+                <div class="experience__column ">
+                    <p><span>Врачи с опытом</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cases ">
+        <div class="wrapper ">
+            <div class="cases_title ">
+                <h2>
+                    Что такое All-on 4
+
+                </h2>
+                <p>Несъемное восстановление зубного ряда при полном или частичном<br>отсутствие зубов устанавливаются с
+                    уникальной методологией</p>
+
+            </div>
+            <div class="cases_flex_cont ">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p>В 4 раза дешевле обычной имплантации</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p>Омоложение лица<br> на 7-10 лет</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p>Полное восстановление жевательной функции</p>
+                    </div>
+                </div>
+                <div class="cases_flex_center ">
+                    <video autoplay=" " muted=" " playsinline=" " loop=" "
+                        poster="/build/ii/183bbc08fd60b93b236a702859e09d46dca68245.png " class="loaded ">
+                        <source data-src="./images/all-on-4/video.mp4 " type="video/mp4 " data-js="lazy "
+                            src="./images/all-on-4/video.mp4 ">
+                    </video>
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Можно есть все что угодно</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p>Возвращение четкой дикции<br> за 3-5 дней</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p>Предотвращение атрофии<br> костной ткани</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper ">
+
+        <div class="authoring_method ">
+            <h2>
+                Авторская методика одобренная<br> европейской ассоциацией стоматологов
+            </h2>
+
+            <div class="authoring_method_grid grid ">
+                <div class="authoring_method_box ">
+                    <h3>Процесс</h3>
+
+                    <ol class="auth_met_num ">
+                        <li>Удаление плохих зубов</li>
+                        <li>Установка имплантов и фиксация протеза за 1 день</li>
+                        <li>Импланты устанавливаются под наклоном, чтобы <br>увеличить площадь контакта с костью</li>
+                    </ol>
+                </div>
+                <div class="authoring_method_box ">
+                    <h3>Преимущества</h3>
+
+                    <ol class="auth_met_plus ">
+                        <li><img src="./images/all-on-4/p.m.svg " alt=" "> Сокращается количество визитов</li>
+                        <li><img src="./images/all-on-4/p.m.svg " alt=" ">Позволяет сэкономить деньги на синус-лифтинге
+                        </li>
+                    </ol>
+                </div>
+                <div class="authoring_method_box2 ">
+                    <h3>Вывод:</h3>
+                    <p>Уникальная методология нашей клиники позволяет вам сэкономить и деньги, и минимизировать
+                        количество посещений врача не теряя в качестве.</p>
+                </div>
+                <div class="authoring_method_box3 ">
+
+                    <p><img src="./images/all-on-4/medal.png " alt=" "> Одобрены европейской ассоциацией стоматологов
+                    </p>
+                </div>
+            </div>
+
+            <div class="good_method ">
+                <h2>Отличный способ восстановления зубов
+                </h2>
+                <div class="good_method_flex ">
+                    <div class="good_method_box ">
+                        <img src="./images/all-on-4/jaw.png " alt=" ">
+                        <p>При полной адентии</p>
+                    </div>
+                    <div class="good_method_box ">
+                        <img src="./images/all-on-4/jaw2.png " alt=" ">
+                        <p>При частичной адентии</p>
+                    </div>
+                    <div class="good_method_box ">
+                        <img src="./images/all-on-4/jaw3.png " alt=" ">
+                        <p>При концевых дефектах</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="smile ">
+        <div class="wrapper ">
+            <h2>Как выглядит ваша улыбка с <span>“All-on 4”</span></h2>
+
+            <div class="smile_flex ">
+                <div class="smile_side ">
+                    <ol>
+                        <li>
+                            <div><img src="./images/all-on-4/fa_7.svg " alt=" "></div> Естественные белые зубы
+                        </li>
+                        <li>
+                            <div><img src="./images/all-on-4/fa_8.svg " alt=" "></div> Подтянутый овал лица
+                        </li>
+                        <li>
+                            <div><img src="./images/all-on-4/fa_2.svg " alt=" "></div> Минус 5-10 лет
+                        </li>
+                        <li>
+                            <div><img src="./images/all-on-4/fa_9.svg " alt=" "></div> Начнете жевать сразу
+                        </li>
+                        <li>
+                            <div><img src="./images/all-on-4/fa_10.svg " alt=" "></div> Без ограничений по возрасту
+                        </li>
+
+                    </ol>
+                    <button type="submit " class="red_btn smile_btn "
+                        onclick="openModal('form-modal-callback')">Записаться на бесплатную консультацию</button>
+                </div>
+                <div class="smile_result ">
+                    <img src="./images/all-on-4/result.png " alt=" ">
+                    <img src="./images/all-on-4/result2.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "parts/review.html" %}
+    {% include "parts/repair_all_one.html" %}
+    {% include "parts/care.html" %}
+
+    <div class="rel_bg ">
+        <div class="wrapper ">
+            <div class="reliability ">
+                <div class="reliability_side ">
+                    <h2>Надежность All-on 4</h2>
+
+
+                    <div class="reliability_box ">
+                        <div><img src="./images/all-on-4/fa_11.svg " alt=" "></div>
+                        <p> Протез фиксируется и не требует особого ухода</p>
+                    </div>
+                    <div class="reliability_box ">
+
+                        <div><img src="./images/all-on-4/fa_12.svg " alt=" "></div>
+                        <p>Протез не причиняет дискомфорта</p>
+                    </div>
+                    <div class="reliability_box ">
+                        <div><img src="./images/all-on-4/fa_13.svg " alt=" "></div>
+                        <p>Уже через сутки можно жевать твердую пищу</p>
+                    </div>
+                    <div class="reliability_box ">
+                        <div><img src="./images/all-on-4/fa_14.svg " alt=" "></div>
+                        <p>Стержни гипоаллергенны (из титана)</p>
+
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="red_btn consul_btn ">Получить консультацию</button>
+                </div>
+                <img src="./images/all-on-4/rel.png " alt=" ">
+            </div>
+        </div>
+    </div>
+    {% include "parts/top_five.html" %}
+    {% include "parts/slider_doctors.html" %}
+
+    <div class="wrapper ">
+        <div class="price_implant ">
+            <h2>Стоимость имплантации</h2>
+            <p class="price_title_p ">Итоговая цена! Никаких скрытых платежей! В стоимость входит:</p>
+
+            <div class="price_points ">
+                <div class="price_point_box ">
+                    <div class="price_point_box_num ">
+                        <span>1</span>
+                    </div>
+                    <p>Консультация
+                        <!-- <img src="./images/all-on-4/arrow.svg " alt=" ">-->
+                    </p>
+                </div>
+
+                <div class="price_point_box ">
+                    <div class="price_point_box_num ">
+                        <span>2</span>
+                    </div>
+                    <p>Первичный осмотр
+                        <!-- <img src="./images/all-on-4/arrow.svg " alt=" ">-->
+                    </p>
+                </div>
+                <div class="price_point_box ">
+                    <div class="price_point_box_num ">
+                        <span>3</span>
+                    </div>
+                    <p>План лечения
+                        <!-- <img src="./images/all-on-4/arrow.svg " alt=" ">-->
+                    </p>
+                </div>
+                <div class="price_point_box ">
+                    <div class="price_point_box_num ">
+                        <span>4</span>
+                    </div>
+                    <p>Импланты
+                        <!-- <img src="./images/all-on-4/arrow.svg " alt=" ">-->
+                    </p>
+                </div>
+                <div class="price_point_box ">
+                    <div class="price_point_box_num ">
+                        <span>5</span>
+                    </div>
+                    <p>Изготовление и<br> установка протеза </p>
+                </div>
+            </div>
+            <div class="price_table ">
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">На 4-х имплантах</h3>
+                    <h3><s>220 000 руб</s><span>220 000 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">На 4-х имплантах Nobel</h3>
+                    <h3><s>515 000 руб</s><span>360 000 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <h3 class="h3_left ">На 6-и имплантах</h3>
+                    <h3><s>430 000 руб</s><span>320 000 руб</span></h3>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+            </div>
+            <div class="price_table price_table_mobile ">
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">На 4-х имплантах</h3>
+                        <h3><s>220 000 руб</s><br><span>220 000 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">На 4-х имплантах Nobel</h3>
+                        <h3><s>515 000 руб</s><br><span>360 000 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+                <div class="price_table_line ">
+                    <div>
+                        <h3 class="h3_left ">На 6-и имплантах</h3>
+                        <h3><s>430 000 руб</s><br><span>320 000 руб</span></h3>
+                    </div>
+                    <button onclick="openModal('form-modal-callback')" type="submit "
+                        class="order_btn ">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="consultation_form payment-form ">
+            <h2>Рассрочка без переплат</h2>
+            <p>Или кредит на особых условиях</p>
+            <h3>от 3000 руб/месяц</h3>
+
+            <button type="submit " class="red_btn " onclick="openModal('form-modal-instal')">Узнать подробее</button>
+
+            <img class="person_svg2  person_svg" src="images/products/consultation/zero-procentage.svg " alt=" ">
+        </div>
+    </div>
+    {% include "parts/price_warning.html" %}
+    {% include "parts/faq.html" %}
+    <div class="wrapper">
+        <div class="consultation_form tax-form all_consultation_form ">
+            <h2>Сделаем налоговый вычет</h2>
+            <p style="color: #E31E24 ">Вернем 13% от стоимости лечения</p>
+
+            <form class="form_cons " action="./php/send.php" id="form1" method="post">
+                <input type="text" value="Сделать налоговый вычет" name="title" style="display: none;">
+                <input type="text" placeholder="ФИО налогоплатильщика" name="name">
+                <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask">
+                <input type="text" placeholder="Тип справки (для себя/ребенка/родителей)" name="type">
+                <button type="submit " class="red_btn ">Отправить данные</button>
+            </form>
+            <span class="agreement ">* Нажимая на кнопку, вы выражаете согласие с политикой конфиденциальностии
+                правилами
+                обработки персональных данных</span>
+        </div>
+    </div>
+
+
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+
+
+
+
+</body>
+
+</html>

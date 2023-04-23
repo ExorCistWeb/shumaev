@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/turnkey_impl/gum.png');">
+                    <div>
+                        <h2>
+                            Одномоментная<br> имплантация
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Лечение без боли
+                            </p>
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Безопасность для здоровья
+                            </p>
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2 style="max-width: 540px">Наращивание десны при имплантации</h2>
+                <p style="max-width: 566px">
+                    Рецессией десны называют постепенное оголение шеек и корней зубов. Такое состояние может привести к
+                    пагубным последствиям для всего организма. Зубы из-за убыли десны могут стать более чувствительными
+                    и подвижными, из-за чего принимать пищу, пережевывать ее становится сложнее.<br><br>
+                    Со временем рецессия десны лишь увеличивается, из-за чего шансы на успешное протезирование
+                    сокращаются. Чтобы исправить ситуацию, проводят пластику (наращивание) десны — такая операция
+                    способствует нормализации функции и эстетики.
+                </p>
+            </div>
+            <img src="./images/implantation/exactly_flex6.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    {% include "parts/top_five.html" %}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Как проходит<br> восстановительный период?</h2>
+                <p style="max-width: 676px">
+                    Срок полного заживления десны после гингивопластики зависит от применяемого метода и сложности
+                    операции. В среднем восстановление длится около полутора-двух недель. Для предупреждения осложнений
+                    важно соблюдать рекомендации врача:<br><br>
+
+                    <span>Обеспечить покой полости рта на 6–10 часов. Для этого в течение указанного врачом времени не
+                        принимать пищу.</span>
+                    <span>Отказаться от курения минимум на три дня, а еще лучше до полного заживления.</span>
+                    <span>Принимать все назначенные врачом препараты.</span>
+                    <span>Использовать специальную капу для защиты прооперированного участка.</span>
+                    <span>Избегать твердой и раздражающей слизистые оболочки пищи.</span>
+                    <span>Чистить зубы по обычной схеме, не затрагивая зону проведения пластики.</span>
+                    <span>Не переутомляться, ограничить физические нагрузки.</span><br><br>
+                    После гингивопластики количественные характеристики слизистой постепенно приходят в норму. Десневой
+                    край плотнее прилегает к импланту, восстановленный участок приобретает эстетичный вид.
+                </p>
+            </div>
+            <img src="./images/implantation/exactly_flex7.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %}
+    {# Добавить блок ДОБАВИТЬ#}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/price_implant_tabl.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>
