@@ -12,6 +12,7 @@ a {
 body {
     max-width: 1920px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -74,7 +75,7 @@ h2 span {
 
 .hamburger__line {
     width: 45.83%;
-    height: 5.5%;
+    height: 3px;
     display: block;
     border-radius: 3px;
     background-color: #1f2938;
@@ -774,8 +775,9 @@ header {
 
 .person_svg {
     position: absolute;
-    right: 203px;
+    right: 70px;
     bottom: 0;
+    height: 95%;
 }
 
 .swiper-header.swiper-android .swiper-slide,
@@ -1103,7 +1105,7 @@ header {
 }
 
 .children-form .person_svg {
-    right: 145px;
+    right: 25px;
 }
 
 
@@ -1210,6 +1212,7 @@ header {
 
 .reviews-wrapper {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: scroll;
 }
 
 .review {
@@ -1256,6 +1259,7 @@ header {
 .clients-grid {
     grid-auto-flow: column;
     grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .clients h2 {
@@ -2468,6 +2472,11 @@ footer .doctors__button_border {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+
+.price_warn_center_content {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .price_warn_side_box {
@@ -4065,6 +4074,10 @@ label a:hover {
     justify-content: space-between;
 }
 
+.exactly_flex h2 {
+    line-height: initial;
+}
+
 .price_table_turnkey {
     margin-top: 30px;
 }
@@ -4120,6 +4133,7 @@ label a:hover {
 
 .exactly-header p {
     letter-spacing: 0.1px;
+    padding-right: 15px;
 }
 
 .price_crown .price_table_line {
@@ -4129,4 +4143,9 @@ label a:hover {
 
 .price_crown .price_table_line .h3_left {
     max-width: 705px;
+}
+
+.exactly img {
+    max-width: 335px;
+    width: 100%;
 }
