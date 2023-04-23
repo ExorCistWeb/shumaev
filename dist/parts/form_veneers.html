@@ -1,0 +1,20 @@
+
+    <div class="wrapper">
+        <div class=" veeners-form consultation_form ">
+            <h2>Записаться на бесплатную консультацию</h2>
+            <p>Заполните форму и в ближайшее время с вами свяжется менеджер для уточнения подробностей</p>
+
+            <form action="./php/send.php" class="form_cons" method="post">
+                <input type="text" name="title" value="Запись на консультацию" style="display: none;">
+
+                <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+                <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
+            </form>
+            <label>
+                <input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих <a
+                    href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+            </label>
+            <img class="person_svg2 person_svg" src="images/consult/form_person.png" alt="">
+        </div>
+    </div>
