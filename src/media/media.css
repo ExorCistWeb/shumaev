@@ -11,6 +11,10 @@
     position: relative;
 }
 
+.swiper-header .swiper-slide {
+    min-height: 600px;
+}
+
 .products-grid a {
     height: auto !important;
 }
@@ -228,6 +232,9 @@
     .error_page img,
     .thank_page img {
         width: 70%;
+    }
+    .swiper-header .swiper-slide {
+        min-height: unset;
     }
     h2 {
         font-size: 32px;
@@ -1345,6 +1352,10 @@
 }
 
 @media (max-width: 850px) {
+    .exactly img {
+        max-width: 335px;
+        width: 100%;
+    }
     .error_page,
     .thank_page {
         padding: 25px 10px 25px 20px;

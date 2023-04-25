@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/pediatric_dentistry/teeth_fluoridation.png');">
+                    <div>
+                        <h2>
+                       Фторирование<br> зубов у детей
+                        </h2>
+                        <div class="swiper-body">
+                           <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Долговременный эффект процедуры
+                            </p>
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Что такое фторирование</h2>
+                <p style="max-width: 675px">
+                Многие знают, что молочные зубы в отличие от постоянных имеют более рыхлую и слабую структуру тканей, в связи с этим, процесс развития кариеса у детей происходит очень быстро. Фторирование зубов – это процедура по насыщению зубной эмали соединениями фтора, которые запечатывают дентинные канальцы. Вследствие чего плотность эмали значительно увеличивается, и поверхность зубов становится менее восприимчивой к негативному влиянию пищевых кислот и болезнетворных микроорганизмов.
+</p>
+            </div>
+            <img src="./images/pediatric_dentistry/ex6.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+      <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Существует несколько методик<br> проведения этой процедуры</h2>
+                <p style="max-width: 745px">
+                    <b>Простое фторирование.</b><br>
+                    Суть данной процедуры заключается в нанесении на поверхность зубов специальных растворов или лаков, которые оказывают на эмаль укрепляющий эффект. Простое фторирование рекомендовано проводить в целях профилактики, так как фторсодержащие препараты не достигают глубоких слоев эмали и не могут помочь при наличии кариеса.<br><br>
+
+                    <b>Глубокое фторирование.</b><br>
+                   Проводится при помощи специального эмаль-запечатывающего состава, который благодаря более концентрированному содержанию ионов фтора глубоко проникает в зубные ткани и способствует их укреплению. Эта методика может применяться на молочных зубах при различных стадиях кариеса, и на начальных этапах, и при глубоких повреждениях. Данная манипуляция помогает приостановить процесс разрушения молочных зубов, что позволяет сохранить их до момента смены на коренные.
+
+                
+                </p>
+            </div>
+            <img src="./images/pediatric_dentistry/ex2_5.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

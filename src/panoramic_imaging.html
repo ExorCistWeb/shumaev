@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/diagnostic/panoramic_imaging.png');">
+                    <div>
+                        <h2>
+                       Панорамный снимок<br> зубов
+                        </h2>
+                        <div class="swiper-body">
+                           <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Один снимок позволяет увидеть полную картину состояния зубочелюстной системы
+                            </p>
+                          
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Панорамный снимок зубов</h2>
+                <p style="max-width: 780px">
+Панорамный снимок зубов (ортопантомограмма или ОТПГ) – рентгеновский снимок верхней и нижней челюсти. Позволяет детально рассмотреть большинство стоматологических проблем, провести качественную диагностику и назначить лечение.<br><br>
+
+На панорамном снимке зубов видны не только зубы, но и челюстные суставы, придаточные пазухи носа и лицевые кости. Все это делает его незаменимым при ортодонтическом, хирургическом и реконструкционном лечении. Получить ОПТГ можно с помощью ортопантомографа.
+                </p>
+            </div>
+            <img src="./images/diagnostic/ex4.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+      <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Как проходит панорамный<br> снимок зубов</h2>
+                <p style="max-width: 760px">
+                    <span>Панорамный снимок зубов – специализация врача стоматолога-рентгенолога. Проводится он с помощью ортопантомографа – современного устройства, который подвергает организм минимальному количеству рентгеновского излучения.</span><br><br>
+                    <span>Для проведения снимка необходимо встать или сесть возле аппарата. Далее пациент должен одеть защитный фартук, который защищает от излучения грудную клетку. Когда пациент будет готов, врач запускает ортопантомограф. Вся процедура длится не более 15 минут и является полностью безболезненной.</span><br><br>
+ <span>Во время процесса необходимо находиться в неподвижном положении. После того, как панорамный снимок будет сделан, нужно подождать еще несколько минут. За это время специалист подготовит снимок и предоставит его пациенту. Вся процедура длится не больше 15 минут, включая время, необходимое для подготовки и ожидания.</span>
+</p>
+            </div>
+            <img src="./images/diagnostic/ex2_4.png" alt=" ">
+        </div> 
+    </div>
+    
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

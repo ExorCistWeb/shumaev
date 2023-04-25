@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/dental_treatment/caries_treatment.png');">
+                    <div>
+                        <h2>
+                          Лечение кариеса
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Используем пломбировочные материалы<br> последнего поколения
+                            </p>
+                            
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Что такое кариес?</h2>
+                <p style="max-width: 675px">
+Кариес — это патологическое поражение твердых тканей зуба, возникающее под действием бактерий полости рта. Процесс начинается с деминерализации зубной эмали и повышения ее проницаемости, из-за чего бактерии проникают в дентин.<br><br>
+
+Развитию заболевания способствует богатая углеводами и сахарами диета, неудовлетворительная гигиена полости рта, наследственность, системные заболевания организма.
+
+
+</p>
+            </div>
+            <img src="./images/dental_treatment/ex1.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+  <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Виды кариеса</h2>
+                <p style="max-width: 744px">
+               
+                <b>Пришеечный</b> — процесс возникает в прикорневой части зуба рядом с десной. Так как в области шейки зуба толщина дентина небольшая, заболевание быстро переходит в пульпит и периодонтит.<br><br>
+
+<b>Межзубный</b> — поражение боковой стенки в месте соприкосновения с соседним зубом. Развивается из-за плохой гигиены межзубного пространства. Научным языком кариес контактных поверхностей эмалей называют апроксимальным.<br><br>
+
+<b>Фиссурный</b> — кариозное разрушение эмали происходит в углублениях (фиссурах) жевательной поверхности зуба.<br><br>
+
+Кариозный процесс бывает первичным и вторичным. Вторичный кариес под пломбой или коронкой развивается из-за недостаточной очистки пораженного дентина при пломбировании и протезировании.
+
+
+
+
+                </p>
+            </div>
+            <img src="./images/dental_treatment/ex2_1.png" alt=" ">
+        </div>
+    </div>
+    {# Добавить Блок #}
+    {% include "parts/top_five.html" %}
+   
+   
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/price_crown_tabl.html" %}
+    
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

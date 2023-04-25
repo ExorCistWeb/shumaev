@@ -4104,7 +4104,7 @@ label a:hover {
 }
 
 .exactly-header p span {
-    display: flex;
+    display: -webkit-inline-box;
 }
 
 .exactly-header p span::before {
@@ -4143,9 +4143,4 @@ label a:hover {
 
 .price_crown .price_table_line .h3_left {
     max-width: 705px;
-}
-
-.exactly img {
-    max-width: 335px;
-    width: 100%;
 }

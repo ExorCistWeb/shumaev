@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/orthodontics/mini_braces.png');">
+                    <div>
+                        <h2>
+                          Брекеты <br>
+Mini Diamond
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Размеры брекетов Mini Diamond на 30% <br>меньше традиционных брекетов!
+                            </p>
+                            
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Брекеты Mini Diamond</h2>
+                <p style="max-width: 675px">
+Брекеты Mini Diamond производит американская компания ORMCO. Эти металлические брекет-системы сделаны на высокоточном современном оборудовании.<br><br>
+
+Мини-брекеты Mini Diamond меньше обычных металлических брекетов примерно на 30%. За счет этого они менее заметны на зубах, чем металлические брекеты обычного размера. То, что они маленькие никоим образом не снижает эффективность лечения и не увеличивает его продолжительность.
+                </p>
+            </div>
+            <img src="./images/orthodontics/ex13.png" alt=" ">
+        </div>
+    </div>
+    {# Изменить иконки/отступы #}
+    <div class="cases " style="margin-bottom: 100px;">
+        <div class="wrapper ">
+            <h2>Преимущества <br>
+металлических брекетов
+</h2>
+            <div class="cases_flex_cont all-on-6_cases">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Не окрашиваются. Пейте кофе или чай в удовольствие</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 240px;">Вызывают меньше дискомфорта</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Клипсы-фиксаторы смотрятся более эстетично
+</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 320px;">Скользящие фиксаторы ускоряют процесс лечения на 20-30%</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p>Экономия времени. Поход<br> к врачу 1 раз в 2 месяца</p>
+                    </div>
+
+
+
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Легкий уход за полостью рта<br> из-за отсутствие лигатур</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    {% include "parts/top_five.html" %}
+    {# Добавить блок #}
+    {% include "parts/form_ortodont.html" %}
+    {% include "parts/repair_rep.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/repair_veneer.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+ 
+</html>

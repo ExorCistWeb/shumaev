@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/orthodontics/metal_brackets.png');">
+                    <div>
+                        <h2>
+                           Металлические<br>
+брекеты
+                        </h2>
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Могут справиться с дефектами прикуса<br> любой степени тяжести
+                            </p>
+                            
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Металлические брекеты</h2>
+                <p style="max-width: 675px">
+Металлические брекеты – это классический, надежный и востребованный способ лечения аномалий зубочелюстного аппарата. Эти ортодонтические конструкции имеют серый цвет, отличающийся от натурального оттенка эмали зубов, поэтому заметны на зубах и считаются не очень эстетичными. Однако внешне непривлекательный вид металлические брекеты компенсируют своей эффективностью – лечение на них проходит быстрее всего, и они лучше всего справляются со сложными клиническими случаями в области коррекции прикуса. Также их весовым преимуществом для многих пациентов продолжает оставаться их демократичная, по сравнению с другими видами брекетов, цена.
+                </p>
+            </div>
+            <img src="./images/orthodontics/ex1.png" alt=" ">
+        </div>
+    </div>
+    {# Изменить иконки/отступы #}
+    <div class="cases " style="margin-bottom: 100px;">
+        <div class="wrapper ">
+            <h2>Преимущества <br>
+металлических брекетов
+</h2>
+            <div class="cases_flex_cont all-on-6_cases">
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_1.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Не окрашиваются. Пейте кофе или чай в удовольствие</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_2.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 240px;">Вызывают меньше дискомфорта</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_4.svg " alt=" ">
+                        </div>
+                        <p>Клипсы-фиксаторы смотрятся более эстетично
+</p>
+                    </div>
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_5.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 320px;">Скользящие фиксаторы ускоряют процесс лечения на 20-30%</p>
+                    </div>
+
+                </div>
+                <div class="cases_flex_side ">
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_3.svg " alt=" ">
+                        </div>
+                        <p>Экономия времени. Поход<br> к врачу 1 раз в 2 месяца</p>
+                    </div>
+
+
+
+                    <div class="cases_flex_box ">
+                        <div class="cases_flex_img ">
+                            <img src="./images/all-on-4/fa_6.svg " alt=" ">
+                        </div>
+                        <p style="max-width: 300px;">Легкий уход за полостью рта<br> из-за отсутствие лигатур</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>С какими металлическими<br> брекетами мы работаем?</h2>
+                <p style="max-width: 675px">
+                <b>Вестибулярные.</b> Классический вариант с установкой на внешнюю сторону зубного ряда.<br><br>
+
+                <b>Лингвальные.</b> Устанавливаются на внутреннюю часть зубов, что решает проблемы с эстетикой на период лечения.<br><br>
+
+                <b>Лигатурные.</b> Брекеты крепятся к ортодонтической дуге c помощью миниатюрных замочков, которые нужно раз в 3—4 недели корректировать у стоматолога.<br><br>
+
+                <b>Безлигатурные.</b> Крепление происходит за счет специальных фиксаторов, которые по размеру меньше лигатур, нуждаются в коррекции раз в 6—7 недель.
+                </p>
+            </div>
+            <img src="./images/orthodontics/ex2_1.png" alt=" ">
+        </div>
+    </div>
+    {# Добавить блок #}
+    {% include "parts/top_five.html" %}
+    {% include "parts/form_ortodont.html" %}
+    {% include "parts/repair_rep.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/repair_veneer.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/deduction.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

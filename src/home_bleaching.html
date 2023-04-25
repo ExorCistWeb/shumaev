@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/teeth_whitening/home_bleaching.png');">
+                    <div>
+                        <h2>
+                        Домашнее<br> отбеливание зубов
+                        </h2>
+                        <div class="swiper-body">
+                           <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Видимый результат (отбеливание до 7 тонов).
+                            </p>
+                          
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Домашнее отбеливание зубов</h2>
+                <p style="max-width: 735px">
+               Сейчас существует большое количество систем домашнего отбеливания — в виде гелей для ночного и дневного отбеливания, с каппами (изготавливаются в клинике по зубам пациента), существуют также полоски для отбеливания.<br>
+У домашнего отбеливания есть абсолютные и относительные противопоказания.<br><br>
+
+К абсолютным относятся: беременность, период лактации, возраст до 18 лет, аллергия на перекись водорода.<br><br>
+
+Относительные — изначально чувствительная эмаль и наличие пломб или коронок/виниров на передних зубах. Относительные противопоказания поддаются коррекции.
+
+                </p>
+            </div>
+            <img src="./images/teeth_whitening/ex2.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+      <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Способы отбеливания зубов </h2>
+                <p style="max-width: 760px">
+                 
+                    <span>Использование отбеливающих полосок с осветляющим составом. Производители предлагают варианты и для чувствительных зубов. Полоски наносятся на зубы раз в день на полчаса. Результат – осветление на 2–6 тонов, в зависимости от качества средства.</span><br><br>
+                    <span>Использование гелей на основе перекиси водорода или карбамида. Гели наносятся на поверхность эмали специальной или обычной зубной щеткой.</span><br><br>
+                    <span>Гели с капами имеют тот же принцип действия. Капы нужны, чтобы исключить попадание средства на слизистые оболочки и обеспечить плотное прилегание к зубам.</span><br><br>
+                    <span>
+Отбеливающий карандаш – разновидность осветления гелем, но средство отличается особенностями упаковки. Гель выдавливается и распределяется щеткой на конце устройства. Некоторые препараты требуют смывания, другие – растворяются слюной. Концентрация активного вещества в карандашах для отбеливания зубов небольшая. Отбелить зубы от никотинового налета данным способом не получится. Вариант хорош лишь для поддержания белизны зубов.</span><br><br>
+                     <span>При помощи наборов для домашнего отбеливания зубов Zoom. Они бывают разной комплектации, для дневного и ночного применения, но в общем варианте включают шприцы с отбеливающим средством с дозирующими наконечниками, капы, инструкцию по использованию. Данный способ позволяет отбелить зубы на 4–6 тонов.</span>
+                </p>
+            </div>
+            <img src="./images/teeth_whitening/ex2_2.png" alt=" ">
+        </div>
+    </div>
+    
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

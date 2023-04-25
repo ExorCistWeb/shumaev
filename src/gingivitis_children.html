@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/gum_treatment/gingivitis_children.png');">
+                    <div>
+                        <h2>
+                       Лечение молочных<br> зубов у детей
+                        </h2>
+                        <div class="swiper-body">
+                           <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Комплексный подход к лечению
+                            </p>
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Гингивит у детей</h2>
+                <p style="max-width: 735px">
+                Гингивит у детей представляет собой заболевание, характеризующееся воспалением краевой части десны, которая прилегает к шейке зуба, а также межзубных десневых сосочков. Оно часто встречается у детей и подростков, поскольку в детском возрасте в тканях пародонта активно протекают различные процессы — меняется структура десен, прорезываются новые зубы, происходит становление прикуса.<br><br>
+
+В период полового созревания на мягкие ткани влияют колебания гормонов. Все это создает дополнительные причины для развития воспаления.
+</p>
+            </div>
+            <img src="./images/gum_treatment/ex1.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+      <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Виды гингивита у детей:</h2>
+                <p style="max-width: 745px">
+
+<span><b>Катаральный:</b> проявляется покраснением десен;</span><br><br>
+<span><b>Язвенный (язвенно-некротический):</b> характеризуется образованием язвочек на поверхности слизистой;</span><br><br>
+<span><b>Гипертрофический:</b> проявляется избыточным разрастанием тканей;</span><br><br>
+<span><b>Атрофический:</b> основной симптом – это снижение высоты десны;</span><br><br>
+<span><b>Десквамативный:</b> характеризуется слущиванием верхнего слоя слизистой с образованием ярких эрозий.</span><br><br>
+</p>
+            </div>
+            <img src="./images/gum_treatment/ex2_1.png" alt=" ">
+        </div>
+    </div>
+    
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>

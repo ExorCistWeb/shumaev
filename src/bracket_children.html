@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
+            консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/pediatric_dentistry/bracket_children.png');">
+                    <div>
+                        <h2>
+                       Брекет-системы<br> для детей
+                        </h2>
+                        <div class="swiper-body">
+                           <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Высокая квалификация специалистов
+                            </p>
+                           
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Добавить блок ДОБАВИТЬ #}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Что такое брекеты? Как они<br> работают?</h2>
+                <p style="max-width: 735px">
+                Брекеты – специальные устройства в виде замочков, корректирующие зубной ряд, в результате чего исправляется прикус зубов. Брекеты фиксируются на внутренней или внешней поверхности детских зубов.<br><br>
+
+В пазы брекетов устанавливается специальная дуга с эффектом памяти, которая оказывает давление на зубы, заставляя их смещаться. Именно с этого момента начинается процесс выравнивания зубов.
+</p>
+            </div>
+            <img src="./images/pediatric_dentistry/ex9.png" alt=" ">
+        </div>
+    </div>
+     {% include "parts/form_ortodont.html" %}
+      <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Какие виды зубных брекетов<br> существуют</h2>
+                <p style="max-width: 745px">
+Сейчас все ортодонтические конструкции являются саморегулирующимися. Это значит, что давление на зубы регулируется врачом по необходимости в процессе лечения. В зависимости от типа установки различают:<br><br>
+
+<span>вестибулярные (внешние) – крепятся на внешнюю сторону зубного ряда;</span><br><br>
+
+<span>лингвальные (внутренние) – устанавливаются с внутренней стороны зубов, что делает их незаметными для окружающих.</span><br><br>
+
+От положения брекетов их эффективность не зависит, поэтому оба вида пользуются спросом. Единственная разница в цене. Стоимость брекетов для детей с внутренней установкой дороже, так как они меньше привлекают к себе внимания. Для подростков это является важным критерием.
+</p>
+            </div>
+            <img src="./images/pediatric_dentistry/ex2_8.png" alt=" ">
+        </div>
+    </div>
+    {# Добавить блок #}
+    {% include "parts/top_five.html" %}
+    {% include "parts/care.html" %}
+    {% include "parts/review.html" %}
+    {% include "parts/clients.html" %}
+    {% include "parts/create.html" %}
+    {% include "parts/price_warning.html" %}
+    {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %}
+    {% include "parts/deduction.html" %}
+    
+    {% include "parts/price_crown_tabl.html" %}
+    {% include "parts/slider_clinic.html" %}
+    {% include "parts/popup.html" %}
+    {% include "parts/footer.html" %}
+</body>
+
+</html>
