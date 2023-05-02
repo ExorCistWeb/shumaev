@@ -35,6 +35,9 @@
         right: 0;
         bottom: 0;
     }
+    .types_implants {
+        padding: 0 100px;
+    }
     .thank_page img {
         height: 90%;
     }
@@ -90,11 +93,8 @@
     .footer__column h5 {
         font-size: 17px;
     }
-    .reasons {
-        overflow: hidden;
-    }
-    .reason_3 {
-        width: 612px;
+    .reasons_cont {
+        overflow-x: auto;
     }
     .case {
         width: 100%;
@@ -112,6 +112,9 @@
     .patients-button-next img {
         width: 80px !important;
         height: 80px;
+    }
+    .all-on-6_cases .cases_flex_side {
+        margin: 0 15px;
     }
 }
 
@@ -148,6 +151,33 @@
 }
 
 @media (max-width: 1428px) {
+    .smile_flex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .good_method_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .good_method_box {
+        margin: 0 15px 30px 15px;
+    }
+    .info_care_text {
+        margin-bottom: 30px;
+    }
+    .ic_cart {
+        max-width: 270px;
+    }
+    .info_care_flex {
+        flex-direction: column;
+        align-items: unset;
+    }
+    .implant_benefits_container {
+        flex-direction: column;
+    }
+    .implant_benefits_img {
+        margin-top: 30px;
+    }
     .clients-grid {
         grid-gap: 1%;
         grid-template-columns: 1fr 1fr 1fr;
@@ -216,6 +246,9 @@
     .price_warn_center_box img {
         margin-right: 0;
     }
+    .reliability img {
+        width: 50%;
+    }
 }
 
 .error_title {
@@ -229,6 +262,32 @@
 }
 
 @media (max-width: 1200px) {
+    .reliability>img {
+        width: 90% !important;
+    }
+    .reliability_side {
+        margin-top: 30px;
+    }
+    .reliability {
+        flex-direction: column-reverse;
+    }
+    .price_points {
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    .price_point_box {
+        margin-bottom: 15px;
+    }
+    .info_care_text {
+        max-width: unset;
+    }
+    .types_implants_slide img {
+        width: 400px;
+        height: 400px;
+    }
+    .types_implants .swiper-wrapper {
+        justify-content: unset;
+    }
     .error_page img,
     .thank_page img {
         width: 70%;
@@ -238,7 +297,7 @@
     }
     h2 {
         font-size: 32px;
-        line-height: 169%;
+        line-height: 99%;
         letter-spacing: -0.36px;
     }
     .wrapper {
@@ -1218,9 +1277,6 @@
         justify-content: space-between;
         row-gap: 20px;
     }
-    .smile_result {
-        width: 50%;
-    }
     .reliability>img {
         width: 38%;
     }
@@ -1351,17 +1407,133 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1080px) {
+    .price_table_line h3 {
+        line-height: 22px;
+    }
     .exactly img {
-        max-width: 335px;
+        width: 90%;
+    }
+    .reliability_box {
+        margin-bottom: 15px;
+    }
+    .ic_cart {
+        margin: 0 21px 30px;
+    }
+    .info_care_cont {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .implant_benefits_img {
+        display: none;
+    }
+    .types_implants_slide {
+        flex-direction: column-reverse;
+        justify-content: center;
+        max-height: 960px;
+        padding: 20px 20px 50px 20px;
+    }
+    .types_implants_slide img {
+        margin-bottom: 30px;
+    }
+    .types_implants_slide .types_cont {
+        margin-right: 0;
+    }
+    .types_implants_slide .types_cont p {
+        max-height: unset;
+    }
+    .cases_flex_cont {
+        flex-direction: column;
+    }
+    .all-on-6_cases .cases_flex_side .cases_flex_box:nth-child(1) {
+        margin: 0;
+    }
+    .all-on-6_cases .cases_flex_side .cases_flex_box {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .smile_result img {
+        width: 50% !important;
+    }
+    .authoring_method_box3 p {
+        flex-direction: column;
+    }
+    .care_gap2 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .care_box2 {
+        max-width: 375px;
+        margin: 0 10px 25px 10px;
+        width: 40%;
+    }
+    .reasons_cont {
+        display: flex;
+        flex-direction: column;
+    }
+    .types_implants {
+        padding: 0 50px;
+    }
+    .reason {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 165px !important;
+        border-radius: 10.3077px !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    header .nav-link>.soc_link {
+        margin-right: 30px;
+    }
+    .imp_benefits_box_cont:nth-child(1) {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .imp_ben_box h5 {
+        font-size: 16px;
+    }
+    .imp_ben_box {
+        max-width: 491px;
+        display: flex;
+        height: 123px;
+    }
+    .imp_benefits_box_cont {
+        flex-direction: column;
+        margin: 0;
+    }
+    .imp_ben_box {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .imp_ben_box img {
+        width: 60px;
+    }
+    .exactly img {
         width: 100%;
     }
     .error_page,
     .thank_page {
         padding: 25px 10px 25px 20px;
     }
+    .experience__item {
+        width: 100%;
+    }
+    .experience__column:last-child {
+        width: 100%;
+    }
+    .experience__column p {
+        width: 100% !important;
+        max-width: unset;
+    }
+    .experience__item img {
+        width: 60px !important;
+        margin-right: 20px;
+    }
     .experience {
-        justify-content: space-between;
+        flex-direction: column;
     }
     .experience__item:first-child img {
         width: 52px;
@@ -1444,6 +1616,9 @@
 }
 
 @media(max-width: 770px) {
+    .authoring_method_box3 p img {
+        margin-right: 0;
+    }
     .care__image_absolute {
         position: relative;
         margin: auto;
@@ -1474,12 +1649,35 @@
         flex-direction: column;
         grid-gap: unset;
     }
+    .types_implants_slide img {
+        width: 100%;
+        height: auto;
+    }
+    .types_implants_content h2 {
+        margin-bottom: 30px;
+    }
+    .types_implants_content {
+        padding: 20px 0 30px;
+    }
 }
 
 @media (max-width: 576px) {
+    .types_implants {
+        padding: 0 30px;
+    }
     input[name="type"]::placeholder {
         font-size: 12px;
         padding-left: 10px;
+    }
+    .types_implants_slide .types_cont h3 {
+        font-size: 18px;
+    }
+    .types_implants_slide .types_cont p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .types_implants .swiper-wrapper {
+        overflow: unset;
     }
     .tax-form input:not(input:first-child) {
         padding-left: 0;
@@ -1973,7 +2171,7 @@
     }
     .price_warning_content {
         flex-direction: row;
-        overflow-x: scroll;
+        overflow-x: hidden;
         justify-content: space-between;
     }
     .price_warn_center_box {
@@ -2141,7 +2339,6 @@
     }
     .price_table_line h3 {
         width: 100%;
-        line-height: 0;
     }
     .order_btn {
         width: 100px;

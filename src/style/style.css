@@ -4144,3 +4144,214 @@ label a:hover {
 .price_crown .price_table_line .h3_left {
     max-width: 705px;
 }
+
+.top_btn_red {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+}
+
+
+/* .types_implants .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+} */
+
+.types_implants_content {
+    padding: 20px 0 100px;
+    background: #fff;
+}
+
+.types_implants_content h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.types_implants_slide {
+    background: #EAFAFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px 30px 50px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 1380px;
+    max-height: 620px;
+    margin: 0 80px;
+}
+
+.types_implants_slide .types_cont {
+    width: 100%;
+    max-width: 650px;
+    margin-right: 20px;
+}
+
+.types_implants_slide .types_cont p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    letter-spacing: 0.1px;
+    color: #686E77;
+    overflow-y: auto;
+    max-height: 450px;
+}
+
+.types_implants_slide .types_cont p::-webkit-scrollbar {
+    display: none;
+}
+
+.types_implants_slide .types_cont h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    letter-spacing: -0.08px;
+    font-feature-settings: 'kern' off;
+    color: #0A0909;
+}
+
+.types_implants_slide .types_cont p span {
+    display: -webkit-inline-box;
+}
+
+.types_implants_slide .types_cont p span::before {
+    content: ' ';
+    display: block;
+    min-width: 6px;
+    max-width: 6px;
+    min-height: 7px;
+    max-height: 7px;
+    border-radius: 50px;
+    background: #686E77;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.care_box2 {
+    max-width: 375px;
+    margin: 0 5px 15px 5px;
+}
+
+.care_gap2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_care {
+    width: 100%;
+    padding: 100px 0 60px;
+    background-image: url(../images/info_care/fon.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 70px;
+}
+
+.ic_cart_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_care_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_care_cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_care_text {
+    width: 100%;
+    max-width: 530px;
+    margin-right: 30px;
+}
+
+.ic_cart_text h4 {
+    padding: 0 !important;
+}
+
+.ic_cart_text p {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    letter-spacing: 0.1px;
+    font-feature-settings: 'cpsp' on;
+    color: #686E77;
+}
+
+.ic_cart_text {
+    padding: 27px 27px 10px;
+    align-items: start;
+}
+
+.ic_cart {
+    margin: 0 5px;
+    background: #FFFFFF;
+    border-radius: 24px;
+    height: 339px;
+    width: -webkit-fill-available;
+}
+
+.ic_cart img {
+    width: 100%;
+}
+
+.ic_cart h4 {
+    padding: 20px 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    letter-spacing: -0.08px;
+    /* Gray/I Style 7 */
+    color: #1F2938;
+}
+
+.info_care_text p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+    letter-spacing: 0.12px;
+    font-feature-settings: 'kern' off;
+    color: #686E77;
+    margin-top: 19px;
+}
+
+.imp_ben_box p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* or 133% */
+    letter-spacing: 0.1px;
+    font-feature-settings: 'cpsp' on;
+    color: #686E77;
+    margin-top: 17px;
+}
+
+.imp_benefits_box_cont2 .imp_ben_box {
+    border-radius: 24px;
+    background: #FAFAFC;
+    width: 100%;
+    max-width: 429px;
+    display: flex;
+    height: 250px;
+    align-items: self-start;
+    padding: 0 14px;
+    padding-top: 55px;
+    margin-right: 30px;
+}
+
+.imp_ben_box2 {
+    height: 285px !important;
+}
