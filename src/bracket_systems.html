@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/new_pages/bg4.png');">
+                    <div>
+                        <h2>
+                            Брекет-<br>системы H4
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Американская премиальная брекет-система от Ortho Classic Orthodontics
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info_care">
+        <div class="wrapper">
+            <div class="info_care_flex">
+                <div class="info_care_text">
+                    <h2>Показания к установке брекет-систем H4:</h2>
+
+                </div>
+                <div class="info_care_cont">
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if9.png" alt="">
+                        <h4>Аномалии зубов</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if10.png" alt="">
+                        <h4>Проблемы с прикусом</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if11.png" alt="">
+                        <h4>Подготовка к имплантации, протезированию</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if12.png" alt="">
+                        <h4>Скученность зубов</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Особенности и конструкция брекетов H4</h2>
+                <p style="max-width: 675px">
+                    H4 — самолигирующая металлическая брекет-система премиум класса американской компании Ortho Classic Orthodontics. Ее конструкция разработана инженерами в сотрудничестве с авторитетными практикующими врачами-ортодонтами США. Под торговой маркой H4 компания
+                    Ortho Classic выпускает металлические конструкции, керамические (сапфировые) брекеты относятся к линейке Clear21. <br> <br> Ортодонтические аппараты этого производителя работают по принципу пассивного самолигирования,
+                    то есть крышки металлических скоб не оказывают давления на ортодонтическую дугу. Это снижает трение, обеспечивает более физиологическое воздействие на зубы, снижает побочные эффекты ортодонтической коррекции.
+                </p>
+            </div>
+            <img src="./images/new_pages/ex6.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Преимущества брекетов H4</h2>
+                <p style="max-width: 675px">
+                    <span>   компактные размеры и отсутствие лигатур делают элементы аккуратными и малозаметными;</span><br><br>
+                    <span> закругленные гладкие края конструкции препятствуют скоплению бактерий в зоне соприкосновения;</span><br><br>
+                    <span>основа конструкции – Treadlok –за счет своих свойств обеспечивает лучшую адгезию; двустворчатая база изгиба создает оптимальное анатомическое соответствие;</span><br><br>
+                    <span>улучшенные крылья позволяют при необходимости упрощают лигирование или установку эластичных цепочек;</span> <br><br>
+                    <span>сглаженные контуры конструкции обеспечивают пациенту комфорт при носке;</span><br><br>
+                    <span>за счет гладкости материала уровень трения о костную ткань минимален, что благоприятно отражается на ее состоянии;</span>
+                </p>
+            </div>
+            <img src="./images/new_pages/ex7.png" alt=" ">
+        </div>
+    </div>
+
+    {% include "parts/top_five.html" %} {% include "parts/care.html" %} {% include "parts/review.html" %} {% include "parts/clients.html" %} {% include "parts/create.html" %} {% include "parts/price_warning.html" %} {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %} {% include "parts/price_implant_tabl.html" %} {% include "parts/deduction.html" %} {% include "parts/slider_clinic.html" %} {% include "parts/popup.html" %} {% include "parts/footer.html" %}
+</body>
+
+</html>

@@ -4,8 +4,7 @@
 
 <body>
     <div class="pre-nav">
-        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
-            консультации
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
         </h3>
     </div>
     <div class="wrapper">
@@ -117,19 +116,31 @@
                 <p style="max-width: 675px">
                     <b>Гингивит</b> - это воспаление десен без разрушения зубодесневого соединения.<br><br>
 
-                    <b>Пародонтит </b> - это воспалительное заболевание десен, которое сопровождается разрушением
-                    связочного крепления зуба к кости. Пародонтит может быть локализованным в области одного или
-                    нескольких зубов и в запущенных случаях приводит к их потере.<br><br>
-
-                    Если на изображении вы видите знакомую картину поспешите, чем раньше вы обратитесь к пародонтологу,
-                    тем успешнее будет лечение.
+                    <b>Пародонтит </b> - это воспалительное заболевание десен, которое сопровождается разрушением связочного крепления зуба к кости. Пародонтит может быть локализованным в области одного или нескольких зубов и в запущенных случаях приводит
+                    к их потере.<br><br> Если на изображении вы видите знакомую картину поспешите, чем раньше вы обратитесь к пародонтологу, тем успешнее будет лечение.
                 </p>
             </div>
             <img src="./images/surgery/ex4.png" alt=" ">
         </div>
     </div>
     {% include "parts/form_ortodont.html" %}
-    {# Добавить новый2 блок #}
+    <div class="wrapper ">
+        <div class="exactly exactly2 exactly_flex">
+            <img src="./images/surgery/ec4.png" alt=" ">
+            <div class="exactly-header exactly-header2" style="padding: 0;">
+                <h2>Гингивит может появиться и вследствие повреждений от:</h2>
+                <p style="max-width: 675px">
+                    <span> неправильно установленных пломб (при наличии нависающего края);</span><br>
+                    <span> неправильно установленных протезов;</span><br>
+                    <span>от ударов;</span><br>
+                    <span>ожогов;</span><br>
+                    <span>общесоматических заболеваний.</span>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
     <div class="wrapper ">
         <div class="exactly  exactly_flex">
             <div class="exactly-header " style="padding: 0;">
@@ -144,17 +155,41 @@
             <img src="./images/surgery/ex8.png" alt=" ">
         </div>
     </div>
-    {% include "parts/top_five.html" %}
-    {% include "parts/care.html" %}
-    {% include "parts/review.html" %}
-    {% include "parts/clients.html" %}
-    {% include "parts/create.html" %}
-    {% include "parts/price_warning.html" %}
-    {% include "parts/slider_rating.html" %}
-    {% include "parts/slider_doctors.html" %}
-    {% include "parts/deduction.html" %}
-    {# Добавить блок ДОБАВИТЬ #}
-    {# Таблица под вопросом #}
+    {% include "parts/top_five.html" %} {% include "parts/care.html" %} {% include "parts/review.html" %} {% include "parts/clients.html" %} {% include "parts/create.html" %} {% include "parts/price_warning.html" %} {% include "parts/slider_rating.html" %}
+    {% include "parts/slider_doctors.html" %} {% include "parts/deduction.html" %}
+    <div class="care care2">
+        <div class="wrapper">
+            <h2>Основные этапы
+            </h2>
+
+            <div class="care_gap2">
+                <div class="care_box care_box2">
+                    <div class="counsult_number">1</div>
+                    <img src="./images/index/care_5.png" alt="">
+                    <h3>Диагностика</h3>
+                    <p>для определения заболевания достаточно визуального осмотра. Пародонтолог оценивает состояние десен, опрашивает пациента на наличие жалоб.</p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">2</div>
+                    <img src="./images/index/care_6.png" alt="">
+                    <h3>Санация</h3>
+                    <p>ликвидация очагов инфекции. Это могут быть невылеченные зубы, налет и камень. Обычно они оказываются причиной воспалительного процесса.</p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">3</div>
+                    <img src="./images/index/care_7.png" alt="">
+                    <h3>Местная противовоспалительная терапия</h3>
+                    <p>проводится с помощью обеззараживающих препаратов, растворов для полосканий, антивоспалительных гелей, натуральных зубных паст.</p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">4</div>
+                    <img src="./images/index/care_4.png" alt="">
+                    <h3>Общеукрепляющая терапия</h3>
+                    <p>укрепление иммунитета витаминами, иммуностимуляторами.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper ">
         <div class="price_implant price_crown">
             <h2>Стоимость удаления зуба мудрости</h2>
@@ -164,20 +199,17 @@
                 <div class="price_table_line ">
                     <h3 class="h3_left ">Удаление зуба мудрости простое</h3>
                     <h3><span>3 500 руб</span></h3>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
                 <div class="price_table_line ">
                     <h3 class="h3_left ">Удаление зуба мудрости сложное</h3>
                     <h3><span>4 500 руб</span></h3>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
                 <div class="price_table_line ">
                     <h3 class="h3_left ">Удаление зуба мудрости с разъединением корней</h3>
                     <h3><span>5 500 руб</span></h3>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
 
             </div>
@@ -189,31 +221,26 @@
                         <h3 class="h3_left ">Удаление зуба мудрости простое</h3>
                         <h3><span>3 500 руб</span></h3>
                     </div>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
                 <div class="price_table_line ">
                     <div>
                         <h3 class="h3_left ">Удаление зуба мудрости сложное</h3>
                         <h3><span>4 500 руб</span></h3>
                     </div>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
                 <div class="price_table_line ">
                     <div>
                         <h3 class="h3_left ">Удаление зуба мудрости с разъединением корней</h3>
                         <h3><span>5 500 руб</span></h3>
                     </div>
-                    <button onclick="openModal('form-modal-callback')" type="submit "
-                        class="order_btn ">Заказать</button>
+                    <button onclick="openModal('form-modal-callback')" type="submit " class="order_btn ">Заказать</button>
                 </div>
             </div>
         </div>
     </div>
-    {% include "parts/slider_clinic.html" %}
-    {% include "parts/popup.html" %}
-    {% include "parts/footer.html" %}
+    {% include "parts/slider_clinic.html" %} {% include "parts/popup.html" %} {% include "parts/footer.html" %}
 </body>
 
 </html>

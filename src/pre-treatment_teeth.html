@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/new_pages/bg3.png');">
+                    <div>
+                        <h2>
+                            Подготовка к <br> лечению зубов
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Широкий спектр услуг
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info_care">
+        <div class="wrapper">
+            <div class="exactly  exactly_flex">
+                <div class="exactly-header " style="padding: 0;">
+                    <h2>Как проходит подготовка к лечению зубов</h2>
+                    <p style="max-width: 733px">
+                        <span>Осмотр и составления плана лечения</span><br> Прием у врача начинается с осмотра ротовой полости, а также назначения пациенту ряда диагностических исследований. Это позволит выявить все имеющиеся проблемы со здоровьем зубов
+                        и полости рта и составить подробный план лечения.<br><br>
+
+                        <span>Профессиональная санация ротовой полости</span><br> К лечению зубов рекомендуется приступать только после проведения качественной санации ротовой полости, в ходе которой с зубных поверхностей удаляются все виды налета.<br><br>
+
+                        <span>Лечение</span> <br>
+                        <p>Если пациент обратился к врачу со средним или глубоким кариесом - в лечении зубов без сверления не обойтись. Бормашиной специалист удалит все поврежденные болезнью ткани и сформирует полость под установку пломбы. Пульпит и периодонтит
+                            подразумевают более сложную схему лечения, в которую входят обработка каналов, антибиотикотерапия, некоторые виды хирургических вмешательств. Методика лечения выбирается исходя из особенностей клинического случая. Завершается
+                            лечение зуба финишной реставрацией его коронки фотополимерными пломбировочными материалами.</p>
+
+                    </p>
+                </div>
+                <img src="./images/new_pages/ex5.png" alt=" ">
+            </div>
+        </div>
+    </div>
+
+    {% include "parts/form_ortodont.html" %} {% include "parts/top_five.html" %} {% include "parts/care.html" %} {% include "parts/review.html" %} {% include "parts/clients.html" %} {% include "parts/create.html" %} {% include "parts/price_warning.html" %}
+    {% include "parts/slider_rating.html" %} {% include "parts/slider_doctors.html" %} {% include "parts/price_implant_tabl.html" %} {% include "parts/deduction.html" %} {% include "parts/slider_clinic.html" %} {% include "parts/popup.html" %} {% include
+    "parts/footer.html" %}
+</body>
+
+</html>

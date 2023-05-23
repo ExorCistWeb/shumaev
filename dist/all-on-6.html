@@ -60,9 +60,10 @@
 </header>
 
 <div class="menu-overlay">
+    <a href="./index.html">Главная</a>
     <a href="./services.html">Все услуги</a>
     <a href="#reviews">Отзывы</a>
-    <a href="./404.html">Из других городов</a>
+    <a href="#footer">Контакты</a>
 </div>
 
 
@@ -348,26 +349,30 @@
 
             <div class="reviews-wrapper grid">
                 <div class="review" style="background-image: url('./images/reviews/1.png');">
-                    <button class="review__play-button">
-                <img src="./images/reviews/play-ico.svg" alt="">
-            </button>
+                    <button class="review__play-button" data-video="./videos/video1.mp4">
+            <img src="./images/reviews/play-ico.svg" alt="">
+          </button>
                 </div>
                 <div class="review" style="background-image: url('./images/reviews/2.png');">
-                    <button class="review__play-button">
-                <img src="./images/reviews/play-ico.svg" alt="">
-            </button>
+                    <button class="review__play-button" data-video="./videos/video2.mp4">
+            <img src="./images/reviews/play-ico.svg" alt="">
+          </button>
                 </div>
                 <div class="review" style="background-image: url('./images/reviews/3.png');">
-                    <button class="review__play-button">
-                <img src="./images/reviews/play-ico.svg" alt="">
-            </button>
+                    <button class="review__play-button" data-video="./videos/video3.mp4">
+            <img src="./images/reviews/play-ico.svg" alt="">
+          </button>
                 </div>
                 <div class="review" style="background-image: url('./images/reviews/4.png');">
-                    <button class="review__play-button">
-                <img src="./images/reviews/play-ico.svg" alt="">
-            </button>
+                    <button class="review__play-button" data-video="./videos/video4.mp4">
+            <img src="./images/reviews/play-ico.svg" alt="">
+          </button>
                 </div>
             </div>
+            <video id="video-player" controls>
+        <source src="" type="video/mp4">
+      </video>
+
         </div>
 
 
@@ -506,256 +511,66 @@
     <h2>Наши врачи</h2>
     <div class="swiper doctors-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide doctor">
-                <div class="doctor__column">
-                    <div class="doctor__header">
-                        <h3>
-                            Шумаев Александр Михайлович
-                        </h3>
 
-                        <p>Стоматолог-ортопед, имплантолог, хирург</p>
-
-                        <p class="doctors__red-text">Опыт работы: 8 лет</p>
-
-                        <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
-                            Запись онлайн
-                        </a>
-                        <a class="doctors__button_border" href="#reviews">Отзывы</a>
-                    </div>
-
-                    <div class="doctor__footer">
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 92,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-
-                            <p>Довольных клиентов</p>
-                        </div>
-
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 96,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-                            <p>Случаев без осложнений</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctor__column">
-                    <a class="doctor__play-button">
-                        <img src="./images/doctors/play.svg" alt="">
-                    </a>
-
-                    <img src="./images/doctors/1.png" alt="" class="doctor__image">
-                </div>
-            </div>
 
             <div class="swiper-slide doctor">
-                <div class="doctor__column">
-                    <div class="doctor__header">
-                        <h3>
-                            Черкас Ирина Игоревна
-                        </h3>
-
-                        <p>Врач-терапевт, детский стоматолог </p>
-
-                        <p class="doctors__red-text">Опыт работы: 15 лет</p>
-
-                        <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
-                            Запись онлайн
-                        </a>
-                        <a class="doctors__button_border" href="#reviews">Отзывы</a>
-                    </div>
-
-                    <div class="doctor__footer">
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 90,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-
-                            <p>Довольных клиентов</p>
-                        </div>
-
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 93,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-                            <p>рекомендаций на сторонних сайтов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctor__column">
-                    <a class="doctor__play-button">
-                        <img src="./images/doctors/play.svg" alt="">
+                <img src="./images/slider_doctors/1.png" alt="">
+                <div class="doctors_info">
+                    <h3>Шумаев</h3>
+                    <h4>Александр Михайлович</h4>
+                    <p>Стоматолог-ортопед, имплантолог, хирург</p>
+                    <span>Опыт работы: 8 лет</span>
+                    <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                        Запись онлайн
                     </a>
-
-                    <img src="./images/doctors/2.png" alt="" class="doctor__image">
-                </div>
-            </div>
-
-            <div class="swiper-slide doctor">
-                <div class="doctor__column">
-                    <div class="doctor__header">
-                        <h3>
-                            Айвазян Елена Еремовна
-                        </h3>
-
-                        <p>Врач-ортодонт</p>
-
-                        <p class="doctors__red-text">Опыт работы: 5 лет</p>
-
-                        <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
-                            Запись онлайн
-                        </a>
-                        <a class="doctors__button_border" href="#reviews">Отзывы</a>
-                    </div>
-
-                    <div class="doctor__footer">
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 94,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-
-                            <p>Довольных клиентов</p>
-                        </div>
-
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 95,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-                            <p>рекомендаций на сторонних сайтов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctor__column">
-                    <a class="doctor__play-button">
-                        <img src="./images/doctors/play.svg" alt="">
-                    </a>
-
-                    <img src="./images/doctors/3.png" alt="" class="doctor__image">
                 </div>
             </div>
             <div class="swiper-slide doctor">
-                <div class="doctor__column">
-                    <div class="doctor__header">
-                        <h3>
-                            Мельник Семён Игоревич
-                        </h3>
-
-                        <p>Врач ортопед</p>
-
-                        <p class="doctors__red-text">Опыт работы: 15 лет</p>
-
-                        <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
-                            Запись онлайн
-                        </a>
-                        <a class="doctors__button_border" href="#reviews">Отзывы</a>
-                    </div>
-
-                    <div class="doctor__footer">
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 91,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-
-                            <p>Довольных клиентов</p>
-                        </div>
-
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 96,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-                            <p>рекомендаций на сторонних сайтов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctor__column">
-                    <a class="doctor__play-button">
-                        <img src="./images/doctors/play.svg" alt="">
+                <img src="./images/slider_doctors/2.png" alt="">
+                <div class="doctors_info">
+                    <h3>Айвазян</h3>
+                    <h4>Елена Еремовна</h4>
+                    <p>Врач-ортодонт</p>
+                    <span>Опыт работы: 5 лет</span>
+                    <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                        Запись онлайн
                     </a>
-
-                    <img src="./images/doctors/4.png" alt="" class="doctor__image">
                 </div>
             </div>
             <div class="swiper-slide doctor">
-                <div class="doctor__column">
-                    <div class="doctor__header">
-                        <h3>
-                            Карапетян Геворг Ваграмович
-                        </h3>
-
-                        <p>Стоматолог-ортопед, хирург</p>
-
-                        <p class="doctors__red-text">Опыт работы: 8 лет</p>
-
-                        <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
-                            Запись онлайн
-                        </a>
-                        <a class="doctors__button_border" href="#reviews">Отзывы</a>
-                    </div>
-
-                    <div class="doctor__footer">
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 93,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-
-                            <p>Довольных клиентов</p>
-                        </div>
-
-                        <div class="doctor__footer-item">
-                            <div class="pie" data-pie='{ 
-                            "percent": 91,
-                            "colorSlice": "#e31e24",
-                            "colorCircle": "#f1f1f1",
-                            "fontColor": "#686E77",
-                            "round": true
-                          }'></div>
-                            <p>рекомендаций на сторонних сайтов</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="doctor__column">
-                    <a class="doctor__play-button">
-                        <img src="./images/doctors/play.svg" alt="">
+                <img src="./images/slider_doctors/3.png" alt="">
+                <div class="doctors_info">
+                    <h3>Мельник</h3>
+                    <h4>Семён Игоревич</h4>
+                    <p>Врач ортопед</p>
+                    <span>Опыт работы: 15 лет</span>
+                    <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                        Запись онлайн
                     </a>
-
-                    <img src="./images/doctors/5.png" alt="" class="doctor__image">
+                </div>
+            </div>
+            <div class="swiper-slide doctor">
+                <img src="./images/slider_doctors/4.png" alt="">
+                <div class="doctors_info">
+                    <h3>Карапетян</h3>
+                    <h4>Геворг Ваграмович</h4>
+                    <p>Стоматолог-ортопед, хирург</p>
+                    <span>Опыт работы: 8 лет</span>
+                    <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                        Запись онлайн
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide doctor">
+                <img src="./images/slider_doctors/5.png" alt="">
+                <div class="doctors_info">
+                    <h3>Черкас</h3>
+                    <h4>Ирина Игоревна</h4>
+                    <p>Врач-терапевт, детский стоматолог</p>
+                    <span>Опыт работы: 15 лет</span>
+                    <a class="doctors__button_fill" onclick="openModal('form-modal-callback')">
+                        Запись онлайн
+                    </a>
                 </div>
             </div>
         </div>

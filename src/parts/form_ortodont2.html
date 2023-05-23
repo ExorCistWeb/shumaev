@@ -1,0 +1,18 @@
+{% block aside %}
+<div class="wrapper">
+    <div class="consultation_form children-form">
+        <h2>Консультация, снимок <br> и план лечения <span>бесплатно</span></h2>
+
+        <form action="./php/send.php" class="form_cons" method="post">
+            <input type="text" name="title" value="Консультация с ортодонтом" style="display: none;">
+            <input type="tel" placeholder="Мобильный телефон" name="phone" class="phone_mask" required>
+            <button type="submit" class="red_btn submit-btn">Получить консультацию</button>
+        </form>
+        <label>
+            <span><input type="checkbox" name="consent" checked>
+                Нажимая "Отправить", я даю своё согласие на обработку моих</span> <a href="./document/Обработка_персонланых_данных_Соглашение.pdf">персональных данных.</a>
+          </label>
+        <img class="person_svg" src="images/products/consultation/woman-2.svg" alt="">
+    </div>
+</div>
+{% endblock %}

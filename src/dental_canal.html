@@ -4,8 +4,7 @@
 
 <body>
     <div class="pre-nav">
-        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной
-            консультации
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
         </h3>
     </div>
     <div class="wrapper">
@@ -15,14 +14,14 @@
                 <div class="swiper-slide" style="background-image: url('./images/dental_treatment/dental_pulpitis.png');">
                     <div>
                         <h2>
-                         Лечение<br> каналов зуба
+                            Лечение<br> каналов зуба
                         </h2>
                         <div class="swiper-body">
                             <p class="swiper-body-description sw_body_turnkey">
                                 <img src="./images/brackets/slider/mark.svg" alt="">Постараемся спасти зуб даже при запущенном<br> кариесе, пульпите или периодонтите
                             </p>
-                           
-                           
+
+
                             <div class="swiper-timer-container">
                                 <div class="swiper-timer">
                                     <div class="swiper-timer__item">
@@ -108,7 +107,34 @@
             </div>
         </div>
     </div>
-    {# Добавить блок ДОБАВИТЬ #}
+    <div class="info_care">
+        <div class="wrapper">
+            <div class="info_care_flex">
+                <div class="info_care_text">
+                    <h2>К показаниям для эндодонтической терапии относят:</h2>
+
+                </div>
+                <div class="info_care_cont info_care_cont_p">
+                    <div class="ic_cart">
+                        <img src="./images/info_care/two/if16.png" alt="">
+                        <h4>Глубокий кариес привел к инфицированию сосудисто-нервного пучка (пульпит)</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/info_care/two/if17.png" alt="">
+                        <h4>Воспаление зубного нерва в результате травмы (корень сломан частично или полностью)</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/info_care/two/if18.png" alt="">
+                        <h4>Нерв сгнил/погиб, в тканях вокруг корня идет воспалительный процесс (периодонтит)</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/info_care/two/if19.png" alt="">
+                        <h4>Наличие кисты/гранулемы с гноем у верхушки корня</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper ">
         <div class="exactly  exactly_flex">
             <div class="exactly-header " style="padding: 0;">
@@ -121,26 +147,41 @@
             <img src="./images/dental_treatment/ex5.png" alt=" ">
         </div>
     </div>
-     {% include "parts/form_ortodont.html" %}
-    {# Добавить блок Табы#}
-    {% include "parts/top_five.html" %}
-     
-   
-    {% include "parts/care.html" %}
-    {% include "parts/review.html" %}
-    {% include "parts/clients.html" %}
-    {% include "parts/create.html" %}
-    {% include "parts/price_warning.html" %}
-    {% include "parts/form_ziro.html" %}
-    {% include "parts/slider_rating.html" %}
-    {% include "parts/slider_doctors.html" %}
-    {% include "parts/deduction.html" %}
-    
-    {% include "parts/price_crown_tabl.html" %}
-    
-    {% include "parts/slider_clinic.html" %}
-    {% include "parts/popup.html" %}
-    {% include "parts/footer.html" %}
+    {% include "parts/form_ortodont.html" %}
+    <div class="care care_twoo">
+        <div class="wrapper">
+            <h2>Этапы установки
+            </h2>
+
+            <div class="care_gap2">
+                <div class="care_box care_box2  care_box3 care_box4">
+                    <div class="counsult_number">1</div>
+
+                    <h3>Терапевтический</h3>
+                    <p>Применяется только при пульпите в начальной стадии, когда пациент обратился за эндодонтической помощью при первых симптомах воспаления пульпы. <br> <br> Биологический метод лечения предполагает сохранение части или всего нерва. После
+                        препарирования кариозной полости и открытия доступа к инфицированной пульпе, на нее накладывается лекарство. Ставится временная пломба на 3-5 дней. Процедура повторяется несколько раз до полного восстановления нерва, которое проверяется
+                        рентген-снимком. Когда воспаление пульпы устранено, устанавливается постоянная пломба.
+                    </p>
+
+                </div>
+                <div class="care_box care_box2 care_box3 care_box4">
+                    <div class="counsult_number">2</div>
+
+                    <h3>Хирургический</h3>
+                    <p>Применяется, когда нерв нельзя спасти. После удаления кариозных тканей полностью извлекается пульпа. Все корневые каналы подвергают механической и антисептической обработке. Затем врач их плотно пломбирует гуттаперчевыми штифтами в комбинации
+                        с силером (паста для заполнения пустот между ними, обеспечивает адгезию гуттаперчей к стенкам зубного канала).
+
+
+
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div> {% include "parts/top_five.html" %} {% include "parts/care.html" %} {% include "parts/review.html" %} {% include "parts/clients.html" %} {% include "parts/create.html" %} {% include "parts/price_warning.html" %} {% include "parts/form_ziro.html" %}
+    {% include "parts/slider_rating.html" %} {% include "parts/slider_doctors.html" %} {% include "parts/deduction.html" %} {% include "parts/price_crown_tabl.html" %} {% include "parts/slider_clinic.html" %} {% include "parts/popup.html" %} {% include
+    "parts/footer.html" %}
 </body>
 
 </html>

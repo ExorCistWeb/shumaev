@@ -20,3 +20,11 @@ btnScrollToTop.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+$(document).ready(function() {
+    $('.review__play-button').click(function() {
+        var videoUrl = $(this).data('video');
+        $('#video-player').attr('src', videoUrl);
+        $('#video-player').show();
+    });
+});

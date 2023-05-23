@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang='ru'>
+{% include "parts/head.html" %}
+
+<body>
+    <div class="pre-nav">
+        <h3>Рекомендуйте нас и получайте до <strong>3000 руб</strong> за рекомендацию и посещение бесплатной консультации
+        </h3>
+    </div>
+    <div class="wrapper">
+        {% include "parts/header.html" %}
+        <div class="swiper swiper-header swiper-usual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('./images/new_pages/bg1.png');">
+                    <div>
+                        <h2>
+                            Циркониевые<br> коронки
+                        </h2>
+
+                        <div class="swiper-body">
+                            <p class="swiper-body-description sw_body_turnkey">
+                                <img src="./images/brackets/slider/mark.svg" alt="">Естественный внешний вид
+                            </p>
+
+                            <div class="swiper-timer-container">
+                                <div class="swiper-timer">
+                                    <div class="swiper-timer__item">
+                                        <h5>34</h5>
+                                        <p>часов</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>19</h5>
+                                        <p>минут</p>
+                                    </div>
+
+                                    <div class="swiper-timer__item">
+                                        <h5>05</h5>
+                                        <p>секунд</p>
+                                    </div>
+                                </div>
+
+                                <p class="swiper-timer-desc">
+                                    Ответьте на 5 вопросов и получите точную цену!
+                                </p>
+                            </div>
+
+                            <button class="swiper-button" onclick="openModal('form-modal-scidka')">
+                                <a href="#">
+                                    Получите лучшую цену -30%
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./images/products/arrow-slider-products-left.svg" alt="">
+            </div>
+            <div class="swiper-button-next">
+                <img src="./images/products/arrow-slider-products-right.svg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/hand.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Без скрытых комиссий.</span>
+                        <br>Все включено.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/like.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Брекеты не окрашиваются</span>
+                        <br>и не влияют на вкус!
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/group.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>3645 пациентов</span>
+                        <br>уже доверились нам
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience__item">
+                <div class="experience__column">
+                    <img src="./images/experience/trophy.png" alt="">
+                </div>
+                <div class="experience__column">
+                    <p><span>Врачи с опытос</span>
+                        <br>15+ лет
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info_care">
+        <div class="wrapper">
+            <div class="info_care_flex">
+                <div class="info_care_text">
+                    <h2>Показания к установке циркониевых коронок</h2>
+
+                </div>
+                <div class="info_care_cont">
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if1.png" alt="">
+                        <h4>Значительное разрушение или отсутствие зуба</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if2.png" alt="">
+                        <h4>Некрасивая форма зубов и микродефекты</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if3.png" alt="">
+                        <h4>Потемнение десен в области импланта</h4>
+                    </div>
+                    <div class="ic_cart">
+                        <img src="./images/new_pages/if4.png" alt="">
+                        <h4>Сильное травмирование тканей десны</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper ">
+        <div class="exactly  exactly_flex">
+            <div class="exactly-header " style="padding: 0;">
+                <h2>Структура циркония</h2>
+                <p style="max-width: 675px">
+                    Диоксид циркония или цирконий, представляет из белый кристаллический оксид циркония. Сам по себе материал мягкий, податливый. Это позволяет создавать из него конструкции любой формы. После процесса спекания цирконий становится твёрдым и прочным. Диоксид
+                    циркония примерно в 2-3 раза крепче керамики. На собственной практике во время протезирования на имплантах, мы убедились в том, что прилегание мягких тканей к абатменту из диоксида циркония лучше, чем к титановому. <br>                    <br> Достаточно тонкий каркас (0.3-0.6 мм) позволяет минимально обрабатывать зубы, оставлять их “живыми”. Циркониевые коронки (протезы) абсолютно не восприимчивы к изменению температуры, не меняются в цвете. Одним из важнейших качеств
+                    так же является отсутствие эффекта гальваноза.
+                </p>
+            </div>
+            <img src="./images/new_pages/ex1.png" alt=" ">
+        </div>
+    </div>
+    {% include "parts/form_ortodont.html" %}
+    <div class="implant_benefits">
+        <div class="wrapper">
+            <h2>Преимущества <br> циркониевых коронок</h2>
+            <div class="implant_benefits_container">
+                <div class="implant_benefits_cont">
+                    <div class="imp_benefits_box_cont imp_benefits_box_cont2">
+                        <div class="imp_ben_box">
+                            <img src="./images/cases/icons/17.svg" alt=" ">
+                            <div>
+                                <h5>Биологическая совместимость</h5>
+                                <p>отсутствие аллергической реакции</p>
+                            </div>
+                        </div>
+                        <div class="imp_ben_box">
+                            <img src="./images/cases/icons/13.svg" alt=" ">
+                            <div>
+                                <h5>Высокая эстетичность</h5>
+                                <p>внешне не отличны от собственных зубов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imp_benefits_box_cont imp_benefits_box_cont2">
+                        <div class="imp_ben_box">
+                            <img src="./images/cases/icons/9.svg" alt=" ">
+                            <div>
+                                <h5>Высокая прочность, жёсткость</h5>
+                                <p>прочность на изгиб около 1000 мПа, 1200 твёрдость по Виккерсу</p>
+                            </div>
+                        </div>
+                        <div class="imp_ben_box">
+                            <img src="./images/cases/icons/20.svg" alt=" ">
+                            <div>
+                                <h5>Долговечность</h5>
+                                <p>служат более 20 лет</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img class="implant_benefits_img" src="./images/new_pages/ec1.png">
+            </div>
+        </div>
+    </div>
+    <!-- табы -->
+    {% include "parts/top_five.html" %} {% include "parts/care.html" %} {% include "parts/review.html" %} {% include "parts/clients.html" %} {% include "parts/create.html" %} {% include "parts/price_warning.html" %} {% include "parts/slider_rating.html" %}
+
+    <div class="care care2">
+        <div class="wrapper">
+            <h2>Подготовка к установке зубной коронки</span>
+            </h2>
+
+            <div class="care_gap2">
+                <div class="care_box care_box2">
+                    <div class="counsult_number">1</div>
+                    <img src="./images/index/care_5.png" alt="">
+                    <h3>Консультация с врачом </h3>
+                    <p>Он осматривает полость рта, определяет проблему. Исходя из результатов осмотра, стоматолог строит план дальнейшего лечения. Часто перед протезированием нужно вылечить кариес и пульпит. Также на консультации пациент может задать свои
+                        вопросы, выбрать материал протеза. </p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">2</div>
+                    <img src="./images/index/care_6.png" alt="">
+                    <h3>Санация </h3>
+                    <p>Во время этой процедуры лечат кариес, пульпит, убирают налет. Чтобы инфекция не развивалась под коронкой, нужно очистить и запломбировать каналы. Если инфекция поразила пульпу, ее нужно удалить.</p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">3</div>
+                    <img src="./images/index/care_7.png" alt="">
+                    <h3>Подготовка к протезированию</h3>
+                    <p>В зависимости от состояния зуба зависит способ подготовки. Стоматолог может обточить эмаль, установить культевую вкладку, штифт или имплант. С установленной основы снимают оттиск, для изготовления постоянного протеза в зуботехнической
+                        лаборатории.
+                    </p>
+                </div>
+                <div class="care_box care_box2">
+                    <div class="counsult_number">4</div>
+                    <img src="./images/index/care_4.png" alt="">
+                    <h3>Примерка и фиксация</h3>
+                    <p>Через некоторое время стоматолог примеряет протез. Это позволяет скорректировать ортопедическую конструкцию, убрать все недостатки, а также подогнать ее под основу. После он окончательно корректирует, фиксирует ее на стоматологический
+                        цемент.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "parts/slider_doctors.html" %} {% include "parts/price_implant_tabl.html" %} {% include "parts/deduction.html" %} {% include "parts/slider_clinic.html" %} {% include "parts/popup.html" %} {% include "parts/footer.html" %}
+</body>
+
+</html>

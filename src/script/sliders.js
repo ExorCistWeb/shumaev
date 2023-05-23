@@ -40,23 +40,24 @@ var swiper = new Swiper(".rating-slider", {
 var swiper = new Swiper(".doctors-slider", {
     loop: true,
     slidesPerGroup: 1,
-    slidesPerView: 2,
-    spaceBetween: 105,
+    slidesPerView: 3,
+    spaceBetween: -50,
     centeredSlides: true,
-
 
     navigation: {
         nextEl: ".doctors-button-next",
         prevEl: ".doctors-button-prev",
     },
     breakpoints: {
-        375: {
-            slidesPerView: 1,
+        1280: {
+            slidesPerView: 3,
         },
-        1200: {
+        760: {
             slidesPerView: 2,
         },
-
+        320: {
+            slidesPerView: 1,
+        },
     },
 });
 var swiper = new Swiper(".types_implants", {

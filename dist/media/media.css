@@ -27,6 +27,9 @@
 }
 
 @media (max-width: 1670px) {
+    .exactly img {
+        max-width: 40%;
+    }
     .error_page img,
     .thank_page img {
         position: absolute;
@@ -54,8 +57,7 @@
     .map_block {
         padding: 250px 0 250px;
     }
-    .clinic .swiper,
-    .doctors-slider {
+    .clinic .swiper {
         zoom: 0.96;
     }
     .all_services_content {
@@ -126,11 +128,12 @@
     .tablet {
         display: block !important;
     } */
+    .cases_flex_cont4 {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     header .tel_form {
         margin-left: 0;
-    }
-    .doctor__image {
-        height: auto;
     }
     .price_warning_content {
         display: grid;
@@ -262,6 +265,18 @@
 }
 
 @media (max-width: 1200px) {
+    .alf_flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .exactly2 {
+        flex-direction: column-reverse !important;
+    }
+    .exactly-header2 {
+        padding-left: 0 !important;
+        margin-top: 20px;
+    }
     .reliability>img {
         width: 90% !important;
     }
@@ -452,13 +467,6 @@
         line-height: 200%;
         letter-spacing: 0.12px;
     }
-    .swiper-wrapper {
-        justify-content: center;
-    }
-    .patients .swiper-slide {
-        /* width: 24%; */
-        margin: 0 6.845px;
-    }
     .patients-slider img {
         width: 100%;
         height: auto;
@@ -516,6 +524,8 @@
         width: 100%;
     }
     .consultation_form label input[type="checkbox"] {
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
     }
     .consultation_form h2,
@@ -543,6 +553,7 @@
     .form_cons {
         display: block;
         background: rgba(255, 255, 255, 0);
+        -webkit-backdrop-filter: blur(0);
         backdrop-filter: blur(0);
         padding: 0;
         margin-bottom: 20px;
@@ -583,77 +594,6 @@
     .children-form .person_svg {
         width: 50%;
     }
-    .doctors {
-        margin-bottom: 40px;
-    }
-    .doctors h2 {
-        margin-bottom: 20px;
-    }
-    .doctor__column:first-child {
-        padding: 28px 0 20px 0;
-        position: relative;
-    }
-    .doctor__header {
-        padding: 0 20px 0 20px;
-    }
-    .doctors h3 {
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -0.08px;
-        font-feature-settings: "kern" off;
-        margin-bottom: 9px;
-    }
-    .doctors p {
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.1px;
-        font-feature-settings: "cpsp" on;
-        width: 85%;
-    }
-    .doctors__red-text {
-        margin: 16px 0 74px 0;
-    }
-    .doctor__footer {
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        bottom: 40%;
-    }
-    .doctor__footer-item p {
-        font-size: 11px;
-        line-height: 127%;
-        letter-spacing: 0.12px;
-    }
-    .doctors .doctors__button_fill {
-        margin-bottom: 10px;
-    }
-    .doctors__button_fill,
-    .doctors__button_border {
-        font-size: 14px;
-        line-height: 157%;
-        letter-spacing: 0.16px;
-        padding: 12px 0 14px 0;
-        width: 100%;
-    }
-    .doctor__play-button {
-        padding: 12px;
-    }
-    .doctor__play-button img {
-        width: 48%;
-    }
-    .doctor__column {
-        max-height: 352px;
-    }
-    .doctor__image {
-        width: 100%;
-    }
-    .swiper-slide.doctor {
-        margin: 0 7px;
-        width: 64%;
-    }
-    .doctor__header::after {
-        display: none;
-    }
     .all_services {
         padding: 25px 0 39px 0;
     }
@@ -688,7 +628,7 @@
         margin-bottom: 20px;
     }
     .all_services_box a {
-        font-size: 11px;
+        font-size: 14px;
         line-height: 108%;
         letter-spacing: 0.0457862px;
         font-feature-settings: "cpsp" on;
@@ -864,7 +804,6 @@
         margin-top: 11px;
     }
     .repairing-slider .swiper-wrapper {
-        justify-content: center;
         margin: 0 !important;
     }
     .repair .swiper-slide {
@@ -988,6 +927,7 @@
         grid-gap: unset;
         flex-wrap: wrap;
         row-gap: 16px;
+        -moz-column-gap: 13px;
         column-gap: 13px;
     }
     .advantage {
@@ -1066,9 +1006,6 @@
     }
     .create-sidebar {
         width: 285px;
-    }
-    .create .doctors__button_fill {
-        max-width: 250px;
     }
     .repair .create-sidebar {
         flex-direction: row;
@@ -1216,9 +1153,6 @@
     .price_warn_side_box {
         max-width: 100%;
     }
-    .swiper-slide.doctor {
-        width: 64% !important;
-    }
     .unit_box {
         min-width: unset;
     }
@@ -1321,9 +1255,6 @@
     .ceramics-red {
         margin-bottom: 28px;
     }
-    .ceramics .doctors__button_fill {
-        width: 91%;
-    }
     .ceramics__column:nth-child(1) {
         width: 163%;
     }
@@ -1375,6 +1306,7 @@
         flex-wrap: wrap;
         row-gap: 30px;
         justify-content: center;
+        -moz-column-gap: 7px;
         column-gap: 7px;
     }
     .experience-lots .experience__item {
@@ -1408,11 +1340,35 @@
 }
 
 @media (max-width: 1080px) {
+    .cases_flex_cont4 {
+        justify-content: center;
+    }
+    .cases_flex_side {
+        max-width: unset !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .cases_flex_cont4 .cases_flex_box {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 310px;
+    }
+    .exactly img {
+        max-width: 90%;
+    }
+    .metho_flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .metho_cont {
+        margin: 0 !important;
+        margin-bottom: 30px !important;
+    }
     .price_table_line h3 {
         line-height: 22px;
     }
     .exactly img {
-        width: 90%;
+        width: 50%;
     }
     .reliability_box {
         margin-bottom: 15px;
@@ -1616,6 +1572,13 @@
 }
 
 @media(max-width: 770px) {
+    .info_alf {
+        padding: 30px 0 30px;
+        margin-bottom: 30px;
+    }
+    .alf_content {
+        padding: 20px 40px;
+    }
     .authoring_method_box3 p img {
         margin-right: 0;
     }
@@ -1637,6 +1600,47 @@
     }
     .care__column:last-child p {
         margin-bottom: 15px;
+    }
+    .alf_content p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        /* or 129% */
+        letter-spacing: -0.08px;
+        /* Gray/I Style 7 */
+        color: #1F2938;
+    }
+    .pre-nav h3 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    header {
+        padding-top: 15px;
+        justify-content: space-between;
+    }
+    header .logo {
+        width: 28%;
+    }
+    header .nav-link {
+        margin-right: 0;
+        justify-content: center;
+        width: 43%;
+        margin-right: 48px;
+    }
+    header .tel_form img {
+        display: none;
+    }
+    header .tel_form_content p,
+    header .tel_form_content button {
+        display: none;
+    }
+    header .soc_link {
+        display: none;
+    }
+    .tel_form_content h3 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
     }
 }
 
@@ -1662,8 +1666,27 @@
 }
 
 @media (max-width: 576px) {
+    .tel_form_content a {
+        margin-right: 0;
+    }
     .types_implants {
         padding: 0 30px;
+    }
+    input[name="type"]::-webkit-input-placeholder {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    input[name="type"]::-moz-placeholder {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    input[name="type"]:-ms-input-placeholder {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    input[name="type"]::-ms-input-placeholder {
+        font-size: 12px;
+        padding-left: 10px;
     }
     input[name="type"]::placeholder {
         font-size: 12px;
@@ -1741,59 +1764,17 @@
     .rate.swiper-slide {
         width: 69%;
     }
-    .patients .swiper-wrapper,
-    .doctors .swiper-wrapper,
-    .clinic .swiper-wrapper,
-    .repair .swiper-wrapper {
-        justify-content: center;
-    }
     .products .swiper-wrapper,
     .patients .swiper-wrapper,
-    .doctors .swiper-wrapper,
     .clinic .swiper-wrapper,
     .repair .swiper-wrapper {
         overflow: unset;
-    }
-    .swiper-backface-hidden .swiper-slide {
-        margin-right: 0 !important;
     }
     h2,
     .all_services h2 span,
     .care h2 span,
     .helping h2 span {
         font-size: 24px;
-    }
-    .pre-nav h3 {
-        font-size: 14px;
-        line-height: 17px;
-    }
-    header {
-        padding-top: 15px;
-        justify-content: space-between;
-    }
-    header .logo {
-        width: 28%;
-    }
-    header .nav-link {
-        margin-right: 0;
-        justify-content: center;
-        width: 43%;
-        margin-right: 48px;
-    }
-    header .tel_form img {
-        display: none;
-    }
-    header .tel_form_content p,
-    header .tel_form_content button {
-        display: none;
-    }
-    header .soc_link {
-        display: none;
-    }
-    .tel_form_content h3 {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 19px;
     }
     .products .swiper-usual .swiper-slide {
         height: 650px;
@@ -1888,9 +1869,6 @@
     .experience p {
         line-height: 214%;
     }
-    .swiper-wrapper {
-        overflow: hidden;
-    }
     /* .patients .swiper-slide {
         width: 58%;
     } */
@@ -1921,19 +1899,6 @@
         width: 73%;
         margin-top: 20px;
     }
-    .swiper-slide.doctor {
-        width: 75% !important;
-        flex-direction: column-reverse;
-    }
-    .doctor__column:first-child {
-        background-color: #eafaff;
-        z-index: 1;
-        margin-top: -100px;
-    }
-    .doctor__column {
-        z-index: 0;
-        width: 100%;
-    }
     .all_services_content {
         display: flex;
         grid-gap: unset;
@@ -1962,7 +1927,6 @@
         display: none;
     }
     .all_services h2 br,
-    .care h2 br,
     .helping h2 br {
         display: none;
     }
@@ -1970,7 +1934,7 @@
         padding: 30px 0;
     }
     .helping {
-        padding-bottom: 250px;
+        padding-bottom: 336px;
     }
     .helping_box {
         width: 100%;
@@ -2227,9 +2191,6 @@
     .modal-content {
         width: 90%;
     }
-    .swiper-backface-hidden .swiper-slide.doctor {
-        margin: 0 10px !important;
-    }
     .tax-form h2 {
         font-size: 23px;
     }
@@ -2407,6 +2368,17 @@
 }
 
 @media (max-width: 420px) {
+    .border_text {
+        width: 50.333%;
+        top: -14.5px;
+    }
+    .helping {
+        padding-bottom: 250px;
+    }
+    .experience img {
+        width: auto !important;
+        height: 55px;
+    }
     .swiper-brackets .swiper-slide {
         height: unset !important;
         background-position-x: 75%;
@@ -2487,6 +2459,7 @@
     }
     .cases h2 {
         margin: 0;
+        margin-bottom: 20px;
     }
     .readings_titile {
         text-align: center;
@@ -2680,22 +2653,6 @@
     }
     .patients .swiper-slide {
         width: 220px;
-    }
-    .doctor {
-        margin: 0 10px !important;
-        height: 100%;
-        min-height: 610px;
-        justify-content: flex-end;
-    }
-    .doctor__footer {
-        bottom: 43%;
-        padding: 0 10px;
-    }
-    .doctor__footer p {
-        margin-left: 5px;
-    }
-    .doctors__red-text {
-        margin: 15px 0 100px 0;
     }
     .map_block p {
         max-width: unset;
